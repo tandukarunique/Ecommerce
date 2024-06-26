@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+.bg-blue {
+  background: rgb(64, 64, 153);
+}
+.headerWrapper .top-strip {
+  padding: 8px 0px;
+}
+.headerWrapper .top-strip p {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerWrapper .header {
+  width: 100%;
+  height: auto;
+  padding: 15px 0px;
+}
+.logoWrapper img {
+  /* width: 100%; */
+  height: 80px;
+  width: 110px;
+  margin-left: -150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerWrapper .header .part2 .countryDrop {
+  /*Country box*/
+  text-align: left;
+  justify-content: flex;
+  width: 160px;
+  height: 60px;
+  min-width: 170px;
+  margin-top: 0px;
+  margin-left: -14.5rem;
+  color: grey;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 7px !important;
+}
+.headerWrapper .header .part2 .countryDrop .label {
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  color: black;
+  line-height: 16px;
+  padding: 10px 15px !important ;
+}
+.headerWrapper .header .part2 .countryDrop .name {
+  font-size: 15px !important;
+  text-transform: capitalize !important;
+  color: rgb(59, 59, 146);
+  font-weight: 560;
+  line-height: 16px;
+}
+
+.headerWrapper .header .part2 .countryDrop span.ml-auto svg {
+  opacity: 0.8;
+}
+
+header .headerSearch {
+  width: 130%;
+  height: 60px;
+  background: rgb(240, 237, 237);
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .headerSearch input {
+  background: transparent !important;
+  outline: none !important;
+  font-size: 14px;
+  color: rgba(36, 21, 21, 0.8);
+  width: 100%;
+  height: 40px;
+  border: 0px !important;
+  padding: 0px 25px;
+  font-size: 20px;
+}
+
+header .headerSearch button {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  z-index: 100;
+  min-width: 40px !important;
+  height: 45px !important;
+  width: 50px !important;
+  border-radius: 200% !important;
+  color: black;
+}
+header .headerSearch button svg {
+  font-size: 20px;
+}
+
+.part3 {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+.ml-auto {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+header .part3 .circle {
+  /*User button ko lagi*/
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 50px !important;
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  color: black;
+  margin-left: 25px;
+}
+header .part3 .circle .mr-3 {
+  margin-top: 50rem;
 }
 
-.App-link {
-  color: #61dafb;
+header .part3 .circle svg {
+  font-size: 22px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartTab .price {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+}
+.cartTab button {
+  background: #fff1ee !important;
+}
+.cartTab button svg {
+  color: red !important;
 }
