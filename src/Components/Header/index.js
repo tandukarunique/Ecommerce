@@ -57,7 +57,11 @@ const Header = () => {
         <nav>
           <div className="container">
             <div className="row">
-              <div className="col-sm-3 navpart1"></div>
+              <div className="col-sm-3 navpart1">
+                <Button className="allCatTab">
+                  <span className="text">ALL CATEGORIES</span>
+                </Button>
+              </div>
               <div className="col-sm-9 navpart9"></div>
             </div>
           </div>
