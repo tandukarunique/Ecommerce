@@ -9,12 +9,13 @@ import { MdBakeryDining } from "react-icons/md";
 import { FaBlog } from "react-icons/fa";
 import { MdContactSupport } from "react-icons/md";
 import { MdLocalGroceryStore } from "react-icons/md";
+import { CiMobile1 } from "react-icons/ci";
 const Navigation = () => {
   return (
     <nav>
       <div className="container">
         <div className="row">
-          <div className="col-sm-3 navpart1">
+          <div className="col-sm-2 navpart1">
             <Button className="allCatTab align-items-center">
               <span className="icon1 mr-2">
                 <IoIosMenu />
@@ -25,49 +26,56 @@ const Navigation = () => {
               </span>
             </Button>
           </div>
-          <div className="col-sm-9 navpart2 d-flex align-items-center">
+          <div className="col-sm-10 navpart2 d-flex align-items-center">
             {" "}
             {/*All categories ko side ko nav*/}
             <ul className="list list-inline ml-auto">
               <li className="list-inline-item">
                 <Link to="/">
-                  Home
-                  <FaHome />
+                  <Button>Home <FaHome /></Button>
+                  
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  Fashion
-                  <GiClothes />
+                  <Button>Fashion<GiClothes /></Button>
+                  
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  Electronics
-                  <MdOutlineDevices />
+                  <Button>Electronics<MdOutlineDevices /></Button>
+                  
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  Bakery <MdBakeryDining />
+                  <Button>Bakery<MdBakeryDining /></Button> 
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  Grocery
-                  <MdLocalGroceryStore />
+                  <Button>Grocery  <MdLocalGroceryStore /></Button>
+                
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  Blog
-                  <FaBlog />
+                  <Button>Blog<FaBlog /></Button>
+                  
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  Contact Us
-                  <MdContactSupport />
+                  <Button>
+                    Mobiles <CiMobile1 />
+                  </Button>
+                </Link>
+              </li>
+              <li className="list-inline-item">
+                <Link to="/">
+                  <Button>Contact<MdContactSupport /></Button>
+                  
                 </Link>
               </li>
             </ul>

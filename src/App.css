@@ -16,6 +16,17 @@ body {
 .container {
   max-width: 90%;
 }
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: white !important;
+}
+::-webkit-scrollbar-track {
+  background: white !important;
+}
 .headerWrapper .top-strip {
   padding: 8px 0px;
 }
@@ -69,7 +80,7 @@ body {
   opacity: 0.8;
 }
 
-header .headerSearch {
+.headerSearch {
   width: 130%;
   height: 43px;
   background: rgb(240, 237, 237);
@@ -79,7 +90,7 @@ header .headerSearch {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-header .headerSearch input {
+.headerSearch input {
   background: transparent !important;
   outline: none !important;
   font-size: 14px;
@@ -91,7 +102,7 @@ header .headerSearch input {
   font-size: 20px;
 }
 
-header .headerSearch button {
+.headerSearch button {
   position: absolute;
   top: 0px;
   right: 2px;
@@ -102,7 +113,7 @@ header .headerSearch button {
   border-radius: 200% !important;
   color: black;
 }
-header .headerSearch button svg {
+.headerSearch button svg {
   font-size: 20px;
 }
 
@@ -161,10 +172,57 @@ header .part3 .circle svg {
   height: 20px;
   justify-content: center;
 }
+.locationmodel .MuiPaper-elevation {
+  padding: 25px;
+  position: relative;
+}
+.locationmodel p {
+  padding: 10px;
+}
+.locationmodel .countryList {
+  margin-bottom: 0px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.locationmodel .countryList li {
+  width: 100%;
+  text-transform: capitalize !important;
+  list-style: none;
+}
+.locationmodel .countryList li button {
+  width: 100%;
+  text-transform: capitalize !important;
+  color: black !important;
+  justify-content: flex-start !important;
+  padding: 15px 20px;
+  font-weight: 12px;
+}
+
+.locationmodel .close_ {
+  position: absolute;
+  top: -90px;
+  right: -10px;
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+}
+.locationmodel .close_ svg {
+  font-size: 60px;
+}
+nav .navpart1 {
+  max-width: 16.66759%;
+  flex: 0 0 16.66759%;
+}
+nav .navpart2 {
+  max-width: 0 0 83.32994%;
+  flex: 0 0 83.32994%;
+}
 nav .allCatTab {
   /*All categories ko box*/
   background: #2bbef9;
-  padding: 10px 22px !important;
+  padding: 10px 30.6px !important;
   border-radius: 30px;
   margin-left: -20px;
 }
@@ -175,8 +233,9 @@ nav.allCatTab:hover {
   background: #2bbef9;
 }
 nav.allCatTab .text {
-  font-weight: 600;
+  font-weight: 500;
   color: aliceblue;
+  font-size: 10px;
 }
 nav.allCatTab .icon1 svg {
   font-size: 20px;
@@ -189,13 +248,18 @@ nav.allCatTab .icon2 .ml-2 {
   margin-top: 5px;
 }
 nav .navpart2 ul {
-  margin-bottom: 0px;
+  margin-top: -40px;
+  padding-left: 240px;
+  font-weight: 30px;
 }
 nav .navpart2 ul li a {
-  font-size: 16px;
-  font-weight: 600;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
+}
+nav .navpart2 ul li a button {
+  font-size: 15px;
+  font-weight: 550;
+  text-decoration: none;
+  color: black;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -208,6 +272,7 @@ nav .navpart2 ul li a svg {
   font-size: 18px;
   margin-left: 5px;
   margin-bottom: 5px;
+  color: #508da5;
 }
 nav .navpart2 ul li a:hover {
   background: white;
