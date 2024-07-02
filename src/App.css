@@ -198,7 +198,12 @@ header .part3 .circle svg {
   padding: 15px 20px;
   font-weight: 12px;
 }
-
+.locationmodel .countryList li button:hover {
+  background: white;
+}
+.locationmodel .countryList li button.active {
+  background: rgb(215, 210, 210) !important ;
+}
 .locationmodel .close_ {
   position: absolute;
   top: -90px;
