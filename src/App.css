@@ -27,6 +27,10 @@ body {
 ::-webkit-scrollbar-track {
   background: white !important;
 }
+.headerWrapper {
+  border-bottom: 1px solid rgb(218, 211, 211);
+  padding-bottom: 0px;
+}
 .headerWrapper .top-strip {
   padding: 8px 0px;
 }

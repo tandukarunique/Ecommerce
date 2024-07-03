@@ -4,35 +4,37 @@ import { FaAngleDown } from "react-icons/fa";
 import Dialog from "@mui/material/Dialog";
 // import { FaSearch } from "react-icons/fa";
 import { IoIosClose } from "react-icons/io";
-import { useState } from "react";
+import { useState ,useContext,useEffect} from "react";
 import Slide from "@mui/material/Slide";
 import { MyContext } from "../../App";
-import { useContext } from "react";
-import { FilterList } from "@mui/icons-material";
-import useEffect from "react"
+
+// import { filterList } from "@mui/icons-material";
+
+
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 const CountryDropdown = () => {
   const [isOpenModel, setisOpenModel] = useState(false);
   const [selectedTab, setselectedTab] = useState(null);
-  const [countryList, setCountryList] = useState([]);
+  const [countryList, setcountryList] = useState([]);
 
   const context = useContext(MyContext);
+
   const selectCountry = (index) => {
     setselectedTab(index);
     setisOpenModel(false);
   };
   useEffect(() => {
-    setCountryList(context.countryList);
-  }, []);
-  const FilterList = (e) => {
+    setcountryList(context.countryList);
+  }, [context.countryList]);
+  const filterList = (e) => {
     const keyword = e.target.value.toLowerCase();
 
     const list = countryList.filter((item) => {
       return item.country.toLowerCase().includes(keyword);
     });
-    setCountryList(list);
+    setcountryList(list);
   };
   return (
     <>
@@ -58,7 +60,7 @@ const CountryDropdown = () => {
           <input
             type="text"
             placeholder="Search your area...."
-            onChange={FilterList}
+            onChange={filterList}
           />
           <Button className="close_" onClick={() => setisOpenModel(false)}>
             <IoIosClose />
@@ -71,7 +73,7 @@ const CountryDropdown = () => {
                 <li key={index}>
                   <Button
                     onClick={() => selectCountry(index)}
-                    className={`${selectedTab === index ? "active" : ""}`}
+                    className={`${selectedTab === index ? "active" : "Error bhayo"}`}
                   >
                     {item.country}
                   </Button>

@@ -3,25 +3,25 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Header from "./Components/Header";
-import { createContext, useDebugValue, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
 const MyContext = createContext();
 function App() {
-  const [countryList, setCountryList] = useState([]);
+  const [countryList, setcountryList] = useState([]);
   useEffect(() => {
     getCountry("https://countriesnow.space/api/v0.1/countries/");
   }, []);
 
   const getCountry = async (url) => {
     const responsive = await axios.get(url).then((res) => {
-      setCountryList(res.data.data);
+      setcountryList(res.data.data);
       console.log(res.data.data);
     });
   };
 
   const values = {
-    countryList
+    countryList,
   };
   return (
     <BrowserRouter>
