@@ -33,7 +33,9 @@ const Header = () => {
               </div>
 
               <div className="col-sm-10 d-flex align-items-center part2">
-                {context.countryList.length !== 0 && <CountryDropdown />}
+                {
+                context.countryList.length !== 0 && <CountryDropdown />
+                }
 
                 <SearchBox />
 
@@ -42,7 +44,7 @@ const Header = () => {
                     <FaCircleUser />
                   </Button>
                   <div className="ml-auto cartTab d-flex align-items-center ml-auto">
-                    <span className="price"> Rs.1050 </span>
+                    <span className="price">Rs.1050 </span>
                     <div className="position-relative ml-2">
                       <Button className="circle ">
                         <IoBagOutline />

@@ -4,12 +4,11 @@ import { FaAngleDown } from "react-icons/fa";
 import Dialog from "@mui/material/Dialog";
 // import { FaSearch } from "react-icons/fa";
 import { IoIosClose } from "react-icons/io";
-import { useState ,useContext,useEffect} from "react";
+import { useState, useContext, useEffect } from "react";
 import Slide from "@mui/material/Slide";
 import { MyContext } from "../../App";
 
 // import { filterList } from "@mui/icons-material";
-
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -21,9 +20,10 @@ const CountryDropdown = () => {
 
   const context = useContext(MyContext);
 
-  const selectCountry = (index) => {
+  const selectCountry = (index, country) => {
     setselectedTab(index);
     setisOpenModel(false);
+    context.setselectedCountry(country);
   };
   useEffect(() => {
     setcountryList(context.countryList);
@@ -41,10 +41,16 @@ const CountryDropdown = () => {
       <Button className="countryDrop" onClick={() => setisOpenModel(true)}>
         <div className="info d-flex flex-column">
           <span className="label">Your Location</span>
-          <span className="name">Nepal</span>
+          <span className="name">
+            {context.selectCountry !== ""
+              ? context.selectedCountry.length > 10
+                ? context.selectedCountry?.substr(0, 10)+'...'
+                : context.selectedCountry
+              : "select Location"}
+          </span>
         </div>
         <span className="ml-auto">
-          <FaAngleDown></FaAngleDown>
+          <FaAngleDown />
         </span>
       </Button>
       <Dialog
@@ -72,7 +78,7 @@ const CountryDropdown = () => {
               return (
                 <li key={index}>
                   <Button
-                    onClick={() => selectCountry(index)}
+                    onClick={() => selectCountry(index, item.country)}
                     className={`${selectedTab === index ? "active" : "Error bhayo"}`}
                   >
                     {item.country}
