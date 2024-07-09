@@ -228,6 +228,21 @@ nav .navpart2 {
   max-width: 0 0 83.32994%;
   flex: 0 0 83.32994%;
 }
+
+nav .navpart1 .catWrapper {
+  position: relative;
+}
+nav .navpart1 .catWrapper .sidebarNav {
+  width: 100%;
+  height: 400px;
+  background: white;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+}
+nav .navpart1 .catWrapper .sidebarNav li {
+  
+}
 nav .allCatTab {
   /*All categories ko box*/
   background: #2bbef9;
@@ -316,7 +331,6 @@ nav .navpart2 ul li .submenu a button {
 }
 nav .navpart2 ul li .submenu a button:hover {
   background: rgb(240, 236, 236) !important;
-
 }
 nav .navpart2 ul li:hover .submenu {
   opacity: 1;
