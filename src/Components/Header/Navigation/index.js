@@ -38,37 +38,42 @@ const Navigation = () => {
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  <Button>Fashion<GiClothes /></Button>
+                  <Button>Men<GiClothes /></Button>
+                  
+                </Link>
+                <div className="submenu shadow">
+                  <Link to = "/"><Button>clothing</Button></Link>
+                  <Link to = "/"><Button>footwear</Button></Link>
+                  <Link to = "/"><Button>watches</Button></Link>
+                </div>
+              </li>
+              <li className="list-inline-item">
+                <Link to="/">
+                  <Button>Women<MdOutlineDevices /></Button>
                   
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  <Button>Electronics<MdOutlineDevices /></Button>
-                  
+                  <Button>Beauty<MdBakeryDining /></Button> 
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  <Button>Bakery<MdBakeryDining /></Button> 
-                </Link>
-              </li>
-              <li className="list-inline-item">
-                <Link to="/">
-                  <Button>Grocery  <MdLocalGroceryStore /></Button>
+                  <Button>Watches  <MdLocalGroceryStore /></Button>
                 
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  <Button>Blog<FaBlog /></Button>
+                  <Button>Kids<FaBlog /></Button>
                   
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">
                   <Button>
-                    Mobiles <CiMobile1 />
+                    gift <CiMobile1 />
                   </Button>
                 </Link>
               </li>

@@ -272,7 +272,7 @@ nav .navpart2 ul li a button {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  padding: 10px 23px;
+  padding: 15px 28px;
   transition: all 0.2s ease-in-out;
   border-radius: 25px;
   /* margin-left: -1.5em; */
@@ -286,4 +286,40 @@ nav .navpart2 ul li a svg {
 nav .navpart2 ul li a:hover {
   background: white;
   color: #2bbef9;
+}
+nav .navpart2 ul li {
+  padding-bottom: 0px;
+}
+nav .navpart2 ul li {
+  position: relative;
+}
+nav .navpart2 ul li .submenu {
+  position: absolute;
+  top: 150%;
+  left: 0px;
+  min-width: 100px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+nav .navpart2 ul li .submenu a {
+  display: block;
+  width: 100%;
+}
+nav .navpart2 ul li .submenu a button {
+  width: 100%;
+  justify-content: flex-start !important;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-transform: capitalize !important;
+  font-weight: 550 !important;
+}
+nav .navpart2 ul li .submenu a button:hover {
+  background: rgb(240, 236, 236) !important;
+
+}
+nav .navpart2 ul li:hover .submenu {
+  opacity: 1;
+  visibility: inherit;
+  top: 130%;
 }
