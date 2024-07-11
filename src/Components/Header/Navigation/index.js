@@ -27,19 +27,34 @@ const Navigation = () => {
                   <FaAngleDown />
                 </span>
               </Button>
-              <div className="sidebarNav">
+              <div className="sidebarNav ">
                 <ul><li><Link to="/">
-                  <Button>clothing</Button>
+                  <Button>Men</Button>
                 </Link></li>
                 <li>
                 <Link to="/">
-                  <Button>footwear</Button>
+                  <Button>Women</Button>
                 </Link>
                 </li>
                 <li>
                 <Link to="/">
-                  <Button>watches</Button>
-                </Link></li></ul>
+                  <Button>Beauty</Button>
+                </Link></li>
+                <li>
+                <Link to="/">
+                  <Button>Watches</Button>
+                </Link>
+                </li>
+                <li>
+                <Link to="/">
+                  <Button>Kids</Button>
+                </Link>
+                </li>
+                <li>
+                <Link to="/">
+                  <Button>Gift</Button>
+                </Link>
+                </li></ul>
               </div>
             </div>
           </div>
