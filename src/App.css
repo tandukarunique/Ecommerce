@@ -233,7 +233,7 @@ nav .navpart1 .catWrapper {
   position: relative;
 }
 nav .navpart1 .catWrapper .sidebarNav {
-  width: 0px;
+  width: 100%;
   opacity: 0;
   height: auto;
   background: white;
@@ -242,13 +242,7 @@ nav .navpart1 .catWrapper .sidebarNav {
   left: -17px;
   border: 1px solid black;
   padding: 0px 15px;
-  transition: all 0.2sec;
-  visibility: hidden;
-}
-nav .navpart1 .catWrapper .sidebarNav .open {
-height: 100%;
-opacity: 1;
-visibility: inherit;
+  transition: all;
 }
 nav .navpart1 .catWrapper .sidebarNav ul li {
   width: 100%;
@@ -268,7 +262,7 @@ nav .navpart1 .catWrapper .sidebarNav ul li button:hover{
 nav .allCatTab {
   /*All categories ko box*/
   background: #2bbef9;
-  padding: 0px 20.6px !important;
+  padding: 10px 30.6px !important;
   border-radius: 30px;
   margin-left: -20px;
 }

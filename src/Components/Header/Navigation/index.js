@@ -10,15 +10,18 @@ import { FaBlog } from "react-icons/fa";
 import { MdContactSupport } from "react-icons/md";
 import { MdLocalGroceryStore } from "react-icons/md";
 import { CiMobile1 } from "react-icons/ci";
+import { useState } from "react";
 const Navigation = () => {
+  const [isOpenSidebarVal,setisOpenSidebarVal] = useState(true)
   return (
+    
     <nav>
       <div className="container">
         <div className="row">
           <div className="col-sm-2 navpart1">
             <div className="catWrapper">
               {" "}
-              <Button className="allCatTab align-items-center">
+              <Button className="allCatTab align-items-center" onClick={() =>setisOpenSidebarVal(!isOpenSidebarVal)}>
                 <span className="icon1 mr-2">
                   <IoIosMenu />
                 </span>
@@ -27,7 +30,7 @@ const Navigation = () => {
                   <FaAngleDown />
                 </span>
               </Button>
-              <div className="sidebarNav ">
+              <div className={`sidebarNav ${isOpenSidebarVal===true ? 'open' : ''}` }>
                 <ul><li><Link to="/">
                   <Button>Men</Button>
                 </Link></li>
