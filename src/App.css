@@ -255,9 +255,9 @@ nav .navpart1 .catWrapper .sidebarNav {
   width: 100%;
   background: white;
   position: absolute;
-  top: 100%;
-  left: 0;
-  border: 1px solid black;
+  top: 118%;
+  left: -5px;
+  border: 1px solid rgb(201, 196, 196);
   padding: 15px;
   transition: all 0.2s;
   visibility: hidden;
@@ -271,6 +271,7 @@ nav .navpart1 .catWrapper .sidebarNav.open {
   opacity: 1;
   max-height: 300px; /* Adjust according to your needs */
   overflow: auto;
+  padding: 5px;
 }
 
 nav .navpart1 .catWrapper .sidebarNav ul {
@@ -296,9 +297,9 @@ nav .navpart1 .catWrapper .sidebarNav ul li button:hover {
 /*All categories ko box*/
 nav .allCatTab {
   background: #2bbef9;
-  padding: 10px 30.6px !important;
+  padding: 10px 38.6px !important;
   border-radius: 30px;
-  margin-left: -20px;
+  margin-left: -10px;
 }
 
 nav .allCatTab * {
@@ -367,7 +368,7 @@ nav .navpart2 ul li {
 }
 nav .navpart2 ul li .submenu {
   position: absolute;
-  top: 150%;
+  top: 100%;
   left: 0px;
   min-width: 100px;
   opacity: 0;
