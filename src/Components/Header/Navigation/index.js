@@ -12,16 +12,18 @@ import { MdLocalGroceryStore } from "react-icons/md";
 import { CiMobile1 } from "react-icons/ci";
 import { useState } from "react";
 const Navigation = () => {
-  const [isOpenSidebarVal,setisOpenSidebarVal] = useState(true)
+  const [isOpenSidebarVal, setisOpenSidebarVal] = useState(false);
   return (
-    
     <nav>
       <div className="container">
         <div className="row">
           <div className="col-sm-2 navpart1">
             <div className="catWrapper">
               {" "}
-              <Button className="allCatTab align-items-center" onClick={() =>setisOpenSidebarVal(!isOpenSidebarVal)}>
+              <Button
+                className="allCatTab align-items-center"
+                onClick={() => setisOpenSidebarVal(!isOpenSidebarVal)}
+              >
                 <span className="icon1 mr-2">
                   <IoIosMenu />
                 </span>
@@ -31,34 +33,41 @@ const Navigation = () => {
                 </span>
               </Button>
               {/*All categories wala nav*/}
-              <div className={`sidebarNav ${isOpenSidebarVal === true ? 'open' : ''}` }>
-                <ul><li><Link to="/">
-                  <Button>Men</Button>
-                </Link></li>
-                <li>
-                <Link to="/">
-                  <Button>Women</Button>
-                </Link>
-                </li>
-                <li>
-                <Link to="/">
-                  <Button>Beauty</Button>
-                </Link></li>
-                <li>
-                <Link to="/">
-                  <Button>Watches</Button>
-                </Link>
-                </li>
-                <li>
-                <Link to="/">
-                  <Button>Kids</Button>
-                </Link>
-                </li>
-                <li>
-                <Link to="/">
-                  <Button>Gift</Button>
-                </Link>
-                </li></ul>
+              <div
+                className={`sidebarNav ${isOpenSidebarVal === true ? "open" : ""}`}
+              >
+                <ul>
+                  <li>
+                    <Link to="/">
+                      <Button>Men</Button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <Button>Women</Button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <Button>Beauty</Button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <Button>Watches</Button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <Button>Kids</Button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <Button>Gift</Button>
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

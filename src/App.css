@@ -4,6 +4,8 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
 
 body {
   font-family: "Lato", sans-serif;
@@ -264,6 +266,7 @@ nav .navpart1 .catWrapper .sidebarNav {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
+  z-index: 100;
 }
 
 nav .navpart1 .catWrapper .sidebarNav.open {
@@ -374,6 +377,7 @@ nav .navpart2 ul li .submenu {
   opacity: 0;
   visibility: hidden; 
    transition: all 0.3s ease-in-out;
+   z-index: 100;
 } 
 nav .navpart2 ul li .submenu a {
   display: block;
@@ -395,3 +399,21 @@ nav .navpart2 ul li:hover .submenu {
   visibility: inherit;
   top: 130%;
 }
+.homeBannerSection {
+  width: 100%;
+  position: relative;
+  padding: 25px;
+}
+
+.homeBannerSection .item {
+  display: flex; /* Flex to center the image */
+  align-items: center; /* Center the image vertically */
+}
+
+.homeBannerSection .item img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Prevent inline element gaps */
+}
+
+
