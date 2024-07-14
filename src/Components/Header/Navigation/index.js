@@ -30,7 +30,8 @@ const Navigation = () => {
                   <FaAngleDown />
                 </span>
               </Button>
-              <div className={`sidebarNav ${isOpenSidebarVal===true ? 'open' : ''}` }>
+              {/*All categories wala nav*/}
+              <div className={`sidebarNav ${isOpenSidebarVal === true ? 'open' : ''}` }>
                 <ul><li><Link to="/">
                   <Button>Men</Button>
                 </Link></li>

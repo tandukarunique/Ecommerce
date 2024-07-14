@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: px;
+  padding: 0px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
@@ -9,7 +9,6 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
 }
-
 .bg-blue {
   background: rgb(64, 64, 153);
 }
@@ -28,7 +27,6 @@ body {
 ::-webkit-scrollbar-track {
   background: white !important;
 }
-
 .headerWrapper {
   border-bottom: 1px solid rgb(218, 211, 211);
   padding-bottom: 0px;
@@ -47,15 +45,17 @@ body {
   height: auto;
   padding: 25px 0px;
 }
-
 .logoWrapper img {
+  /* width: 100%; */
   height: 80px;
   width: 110px;
   margin-left: -10px;
 }
 
 .headerWrapper .header .part2 .countryDrop {
+  /*Country box*/
   text-align: left;
+  justify-content: flex;
   width: 160px;
   height: 45px;
   min-width: 170px;
@@ -65,15 +65,13 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.2) !important;
   border-radius: 7px !important;
 }
-
 .headerWrapper .header .part2 .countryDrop .label {
   font-size: 12px !important;
   text-transform: capitalize !important;
   color: black;
   line-height: 5px;
-  padding: 10px 15px !important;
+  padding: 10px 15px !important ;
 }
-
 .headerWrapper .header .part2 .countryDrop .name {
   font-size: 15px !important;
   text-transform: capitalize !important;
@@ -87,7 +85,7 @@ body {
 }
 
 .headerSearch {
-  width: 100%;
+  width: 130%;
   height: 43px;
   background: rgb(240, 237, 237);
   padding: 5px;
@@ -116,10 +114,9 @@ body {
   min-width: 40px !important;
   height: 45px !important;
   width: 50px !important;
-  border-radius: 50% !important;
+  border-radius: 200% !important;
   color: black;
 }
-
 .headerSearch button svg {
   font-size: 20px;
 }
@@ -128,7 +125,6 @@ body {
   display: flex;
   align-items: center;
 }
-
 .ml-auto {
   margin-left: auto;
   display: flex;
@@ -137,6 +133,7 @@ body {
 }
 
 header .part3 .circle {
+  /*User button ko lagi*/
   align-items: center;
   justify-content: center;
   min-width: 40px !important;
@@ -147,7 +144,6 @@ header .part3 .circle {
   color: black;
   margin-left: 25px;
 }
-
 header .part3 .circle .mr-3 {
   margin-top: 50rem;
 }
@@ -155,23 +151,20 @@ header .part3 .circle .mr-3 {
 header .part3 .circle svg {
   font-size: 22px;
 }
-
 .cartTab .price {
   font-size: 18px;
   color: black;
   font-weight: 400;
   margin-left: -5px;
 }
-
 .cartTab button {
   background: #fff1ee !important;
 }
-
 .cartTab button svg {
   color: red !important;
 }
-
 .cartTab .count {
+  /*Shopping cart ko number*/
   position: absolute;
   top: -4px;
   right: -10%;
@@ -183,29 +176,24 @@ header .part3 .circle svg {
   height: 20px;
   justify-content: center;
 }
-
 .locationmodel .MuiPaper-elevation {
   padding: 25px;
   position: relative;
 }
-
 .locationmodel p {
   padding: 10px;
 }
-
 .locationmodel .countryList {
   margin-bottom: 0px;
   max-height: 400px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
 .locationmodel .countryList li {
   width: 100%;
   text-transform: capitalize !important;
   list-style: none;
 }
-
 .locationmodel .countryList li button {
   width: 100%;
   text-transform: capitalize !important;
@@ -214,15 +202,12 @@ header .part3 .circle svg {
   padding: 15px 20px;
   font-weight: 12px;
 }
-
 .locationmodel .countryList li button:hover {
   background: white;
 }
-
 .locationmodel .countryList li button.active {
-  background: rgb(215, 210, 210) !important;
+  background: rgb(215, 210, 210) !important ;
 }
-
 .locationmodel .close_ {
   position: absolute;
   top: -90px;
@@ -232,105 +217,91 @@ header .part3 .circle svg {
   height: 40px !important;
   border-radius: 50% !important;
 }
-
 .locationmodel .close_ svg {
   font-size: 60px;
 }
-
 nav .navpart1 {
   max-width: 16.66759%;
   flex: 0 0 16.66759%;
 }
-
 nav .navpart2 {
-  max-width: 83.32994%;
+  max-width: 0 0 83.32994%;
   flex: 0 0 83.32994%;
 }
-
+.sidebarNav {
+  display: none;
+}
 nav .navpart1 .catWrapper {
   position: relative;
 }
+
 /*all category ko bhitra ko products*/
-nav .navpart1 .catWrapper .sidebarNav {
+nav .navpart1 .catWrapper .sidebarNav { 
   width: 100%;
+  opacity: 1;
+  height: auto;
   background: white;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 170%;
+  left: -17px;
   border: 1px solid black;
-  padding: 15px;
+  padding: 0px 15px;
   transition: all 0.2s;
   visibility: hidden;
-  opacity: 0;
-  max-height: 0;
   overflow: hidden;
+  display: block;
 }
-
-nav .navpart1 .catWrapper .sidebarNav.open {
-  visibility: visible;
+nav .navpart1 .catWrapper .sidebarNav .open{
+  height: 100%;
   opacity: 1;
-  max-height: 300px; /* Adjust according to your needs */
-  overflow: auto;
+  visibility: visible;
 }
-
-nav .navpart1 .catWrapper .sidebarNav ul {
-  padding: 0;
-  margin: 0;
-}
-
 nav .navpart1 .catWrapper .sidebarNav ul li {
+  width: 100%;
   list-style: none;
   padding: 12px 10px;
+  
 }
-
 nav .navpart1 .catWrapper .sidebarNav ul li button {
   color: black;
   width: 100%;
   justify-content: flex-start;
   text-transform: capitalize;
 }
-
-nav .navpart1 .catWrapper .sidebarNav ul li button:hover {
+nav .navpart1 .catWrapper .sidebarNav ul li button:hover{
   background: transparent !important;
 }
-/*All categories ko box*/
 nav .allCatTab {
+  /*All categories ko box*/
   background: #2bbef9;
   padding: 10px 30.6px !important;
   border-radius: 30px;
   margin-left: -20px;
 }
-
-nav .allCatTab * {
+nav.allCatTab * {
   color: white;
 }
-
-nav .allCatTab:hover {
+nav.allCatTab:hover {
   background: #2bbef9;
 }
-
-nav .allCatTab .text {
+nav.allCatTab .text {
   font-weight: 500;
   color: aliceblue;
   font-size: 10px;
 }
-
-nav .allCatTab .icon1 svg {
+nav.allCatTab .icon1 svg {
   font-size: 20px;
 }
-
-nav .allCatTab .icon2 svg {
+nav.allCatTab .icon2 svg {
   font-size: 15px;
 }
-
-nav .allCatTab .icon2 .ml-2 {
+nav.allCatTab .icon2 .ml-2 {
   font-size: 15px;
   margin-top: 5px;
 }
-
 nav .navpart2 ul {
-  margin-top: -20px;
-  padding-left: 90px;
+  margin-top: -40px;
+  padding-left: 240px;
   font-weight: 30px;
 }
 nav .navpart2 ul li a {
@@ -394,3 +365,7 @@ nav .navpart2 ul li:hover .submenu {
   visibility: inherit;
   top: 130%;
 }
+
+
+
+
