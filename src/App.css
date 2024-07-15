@@ -375,10 +375,10 @@ nav .navpart2 ul li .submenu {
   left: 0px;
   min-width: 100px;
   opacity: 0;
-  visibility: hidden; 
-   transition: all 0.3s ease-in-out;
-   z-index: 100;
-} 
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
 nav .navpart2 ul li .submenu a {
   display: block;
   width: 100%;
@@ -415,5 +415,20 @@ nav .navpart2 ul li:hover .submenu {
   height: auto; /* Maintain the aspect ratio */
   display: block; /* Prevent inline element gaps */
 }
-
-
+.homeBannerSection .slick-arrow {
+  position: relative;
+  overflow: hidden;
+}
+.homeBannerSection .slick-arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+}
+.homeBannerSection .slick-arrows-next {
+  left: 10px !important;
+}
+.homeBannerSection .slick-arrows-next {
+  right : 10px !important;
+}
