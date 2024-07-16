@@ -432,3 +432,6 @@ nav .navpart2 ul li:hover .submenu {
 .homeBannerSection .slick-arrows-next {
   right : 10px !important;
 }
+.homeBannerSection{
+  align-items: center;
+}
