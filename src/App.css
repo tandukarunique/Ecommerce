@@ -418,20 +418,33 @@ nav .navpart2 ul li:hover .submenu {
 .homeBannerSection .slick-arrow {
   position: relative;
   overflow: hidden;
+  
 }
-.homeBannerSection .slick-arrow {
+.homeBannerSection .slick-arrow {/*prev next arrow ko lagi*/
   position: absolute;
   top: 45%;
   z-index: 100;
+  display: flex;
   align-items: center;
   justify-content: center;
+  width: 30px !important;
+  height: 30px !important;
+  background: #444444;
+  border-radius: 100%;
+  font-family: Fontawesome !important;
+
+  }
+
+.slick-prev {
+  left: 60px !important;
+  color: black;
 }
-.homeBannerSection .slick-arrows-next {
-  left: 10px !important;
+.slick-next{
+  right: 60px !important;
+  color: black;
 }
-.homeBannerSection .slick-arrows-next {
-  right : 10px !important;
+.slick-next::before{ 
+  color: white;
 }
-.homeBannerSection{
-  align-items: center;
-}
+
+
