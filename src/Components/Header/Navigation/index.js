@@ -11,6 +11,7 @@ import { MdContactSupport } from "react-icons/md";
 import { MdLocalGroceryStore } from "react-icons/md";
 import { CiMobile1 } from "react-icons/ci";
 import { useState } from "react";
+import { FaAngleRight } from "react-icons/fa6";
 const Navigation = () => {
   const [isOpenSidebarVal, setisOpenSidebarVal] = useState(false);
   return (
@@ -39,33 +40,105 @@ const Navigation = () => {
                 <ul>
                   <li>
                     <Link to="/">
-                      <Button>Men</Button>
+                      <Button>Men <FaAngleRight /></Button>
                     </Link>
+                    <div className="submenu" >
+                    <Link to="/">
+                    <Button>clothing</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>footwear</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>Bags</Button>
+                  </Link>
+
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>Women</Button>
+                      <Button>Women <FaAngleRight /></Button>
                     </Link>
+                    <div className="submenu" >
+                    <Link to="/">
+                    <Button>Make up</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>Bags</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>Clothing</Button>
+                  </Link>
+
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>Beauty</Button>
+                      <Button>Beauty <FaAngleRight /></Button>
                     </Link>
+                    <div className="submenu" >
+                    <Link to="/">
+                    <Button>Make up</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>Bags</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>Nails</Button>
+                  </Link>
+
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>Watches</Button>
+                      <Button>Watches <FaAngleRight /></Button>
                     </Link>
+                    <div className="submenu" >
+                    <Link to="/">
+                    <Button>Alpina</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>Rolex</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>Brellum</Button>
+                  </Link>
+
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>Kids</Button>
+                      <Button>Kids <FaAngleRight /></Button>
                     </Link>
+                    <div className="submenu" >
+                    <Link to="/">
+                    <Button>Toys</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>clothing</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>Books</Button>
+                  </Link>
+
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>Gift</Button>
+                      <Button>Gift <FaAngleRight /></Button>
                     </Link>
+                    <div className="submenu" >
+                    <Link to="/">
+                    <Button>Electronics</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>Clothes</Button>
+                  </Link>
+                  <Link to="/">
+                    <Button>watches</Button>
+                  </Link>
+
+                    </div>
                   </li>
                 </ul>
               </div>

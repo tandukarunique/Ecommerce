@@ -277,26 +277,46 @@ nav .navpart1 .catWrapper .sidebarNav.open {
   padding: 5px;
 }
 
-nav .navpart1 .catWrapper .sidebarNav ul {
-  padding: 0;
-  margin: 0;
-}
-
 nav .navpart1 .catWrapper .sidebarNav ul li {
   list-style: none;
   padding: 12px 10px;
+  width: 100%;
+  position: static; /* Ensure the parent is relative */
 }
 
 nav .navpart1 .catWrapper .sidebarNav ul li button {
   color: black;
   width: 100%;
   justify-content: flex-start;
-  text-transform: capitalize;
+  text-transform: capitalize !important;
+}
+/*icon >*/
+nav .navpart1 .catWrapper .sidebarNav ul li button svg{
+  font-size: 13px;
+  opacity: 0.8;
+ 
 }
 
 nav .navpart1 .catWrapper .sidebarNav ul li button:hover {
   background: transparent !important;
 }
+
+nav .navpart1 .catWrapper .sidebarNav ul li:hover .submenu {
+  display: block; /* Ensure submenu is visible on hover */
+}
+/*all category bhitra ko option bhitra ko men,women*/
+nav .navpart1 .catWrapper .sidebarNav ul li .submenu {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  background: #e9e3e3;
+  z-index: 100;
+  display: none; /* Initially hide submenu */
+}
+
+
 /*All categories ko box*/
 nav .allCatTab {
   background: #2bbef9;
