@@ -8,11 +8,12 @@ import Slider from "react-slick";
 const Home = () => {
   var productsSliderOptions = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
   };
+
   return (
     <>
       <HomeBanner />
@@ -41,7 +42,15 @@ const Home = () => {
               </div>
               <div className="product_row">
                 <Slider {...productsSliderOptions}>
-                  <div className="item"></div>
+                  <div className="item productItem">
+                    <div className="imgWrapper">
+                      <img
+                        src="https://www.google.com/search?sca_esv=098f310337d61f75&sca_upv=1&rlz=1C1BNSD_enNP1073NP1073&sxsrf=ADLYWIKiV5XgoJ9AglZAcb792eLSVUI-hQ:1722826907667&q=random+product+images&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_86uWOeqwdnV0yaSF-x2joZDvir2QxhZkTA8rK1etu4Y3067o-fAl7lygmK690uJyNhakMg---uzr_Yo0p3ZtGQanELZDOaVjFN7yUDe4fgm8aQJKQiASDBoi8CDjwBb6GIRacDnd6jmUt3-NxqSASwMc-y&sa=X&sqi=2&ved=2ahUKEwjF2dyu7tyHAxWCT2wGHZzhGFsQtKgLegQIEBAB&biw=1280&bih=551&dpr=1.5#vhid=IFvrFul-_BHfIM&vssid=mosaic"
+                        alt="1"
+                        className="w-100"
+                      />
+                    </div>
+                  </div>
                 </Slider>
               </div>
             </div>

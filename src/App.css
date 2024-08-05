@@ -501,7 +501,7 @@ nav .navpart2 ul li:hover .submenu {
 }
 .d-flex {
   display: flex !important;
- }
+}
 
 .container .viewAllBtn {
   padding: 4px 7px !important;
@@ -512,10 +512,41 @@ nav .navpart2 ul li:hover .submenu {
   margin-left: 52rem;
   border-radius: 40%;
   color: #2bbef9;
-  font-weight:600;
+  font-weight: 600;
   text-transform: capitalize !important;
 }
-.container .viewAllBtn svg{
+.container .viewAllBtn svg {
   font-size: 20px;
   font-weight: 650;
+}
+.homeProducts .slick-arrow {
+  position: absolute;
+  top: 450%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px !important;
+  height: 30px !important;
+  background: #140f0f;
+  border-radius: 100%;
+  font-family: Fontawesome !important;
+  
+}
+.homeProducts .slick-prev {
+  left: -70rem !important;
+  z-index: 1;
+  
+}
+.homeProducts .slick-next {
+  right: -10px !important;
+  z-index: 1;
+}
+.slick-next::before {
+  color: white;
+}
+.productItem{
+  width: 100%;
+  height:auto ;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
