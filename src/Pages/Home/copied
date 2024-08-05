@@ -1,0 +1,14 @@
+<div className="product_row">
+    <Slider {...productsSliderOptions}>
+      <div className="item productItem">
+        <div className="imgWrapper">
+          <img
+            src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
+            alt=""
+            className="w-100"
+          />
+        </div>
+      </div>
+      {/* Additional items can be added here */}
+    </Slider>
+  </div>

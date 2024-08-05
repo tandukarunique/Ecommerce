@@ -1,6 +1,7 @@
 import HomeBanner from "../../Components/HomeBanner";
 import { Button } from "@mui/material";
 import banner1 from "../../assests/images/Banner1.png";
+// import item from "../../assests/images/item.jpeg";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import React from "react";
 import Slider from "react-slick";
@@ -41,7 +42,7 @@ const Home = () => {
                 </Button>
 
                 <div className="product_row">
-                  {/* <Slider {...productsSliderOptions}>
+                  <Slider {...productsSliderOptions}>
                     <div className="item productItem">
                       <div className="imgWrapper">
                         <img
@@ -51,48 +52,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                  </Slider>  */}
-                  <div className="homeBannerSection">
-                    <Slider {...productsSliderOptions}>
-                      <div className="item productItem">
-                        <div className="imgWrapper">
-                          <img
-                            src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
-                            alt=""
-                            className="w-100"
-                          />
-                        </div>
-                      </div>
-                      <div className="item productItem">
-                        <div className="imgWrapper">
-                          <img
-                            src="https://smartdoko.com/storage/products/resized/1721547959_9570.jpg"
-                            alt=""
-                            className="w-100"
-                          />
-                        </div>
-                      </div>
-                      <div className="item productItem">
-                        <div className="imgWrapper">
-                          <img
-                            src="https://smartdoko.com/storage/products/thumb/1722489037_6437.jpg"
-                            alt=""
-                            className="w-100"
-                          />
-                        </div>
-                      </div>
-
-                      <div className="item productItem">
-                        <div className="imgWrapper">
-                          <img
-                            src="https://smartdoko.com/storage/products/thumb/1719317298_5712.jpg"
-                            alt=""
-                            className="w-100"
-                          />
-                        </div>
-                      </div>
-                    </Slider>
-                  </div>
+                  </Slider>
                 </div>
               </div>
             </div>
