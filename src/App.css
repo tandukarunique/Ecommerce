@@ -19,6 +19,7 @@ body {
 
 .container {
   max-width: 90%;
+  
 }
 
 .cursor {
@@ -488,7 +489,7 @@ nav .navpart2 ul li:hover .submenu {
 .homeProducts .banner {
   width: 100%;
   border-radius: 7px;
-  /* overflow: hidden; */
+  overflow: hidden;
 
 }
 
@@ -496,34 +497,31 @@ nav .navpart2 ul li:hover .submenu {
 .info .text-light {
   font-size: 15px;
   font-weight: 600;
-  margin-left: 20rem;
-  margin-top: -10rem;
-  display:  inline-block;
+  margin-left: 320px;
+  margin-top: 10px;
 }
 .info .hd {
   
   font-size: 25px;
   font-weight: 500;
-  margin-top: -20rem;
- align-items: center;
+  margin-top: -300px;
+  margin-left: 320px;
   
 }
-.container .productRow .text-sml {
-  margin-left: -40px;
-}
+
 .d-flex {
   display: flex !important;
 }
 
-.container .viewAllBtn {
-
+ .container .viewAllBtn {
+position: relative;
   padding: 4px 7px !important;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   height: 50px;
   width: 110px;
   left: 65rem;
-  top: -37rem;
+  top: -35rem;
   margin-top:25%;
   border-radius: 10%;
   color: #2bbef9;
@@ -549,7 +547,7 @@ nav .navpart2 ul li:hover .submenu {
 
 
  .homeProducts .product_row .slick-prev {
-  margin-left: -55px;
+  margin-left: -59px;
   background: black;
   z-index: 100;
 }
@@ -564,7 +562,7 @@ nav .navpart2 ul li:hover .submenu {
   width:1150px;
   height:auto ;
   border: 1px solid rgba(199, 7, 7, 0.1);
-  margin-left: -2rem;
+  margin-left:-6rem;
   margin-top: -34rem;
   
 }
@@ -587,6 +585,7 @@ margin-left: 15px;
 .item .productItem{
   padding: 15px;
 }
+
 
 
 

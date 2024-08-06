@@ -29,8 +29,8 @@ const Home = () => {
             <div className="col-ml-1 productRow "></div>
             <div className="d-flex align-items-left">
               <div className="info w-100 align-items-d-flex">
-                <h3 className="hd">BEST SELLERS</h3>
-                <p className="text-light text-sml mb-10  ">
+                <h3 className="hd w-100">BEST SELLERS</h3>
+                <p className="text-light text-sml mb-10 w-100  ">
                   {" "}
                   Do not miss the current offers{" "}
                 </p>
