@@ -3,17 +3,13 @@ import { Button } from "@mui/material";
 import banner1 from "../../assests/images/Banner1.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import React from "react";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import Rating from "@mui/material/Rating";
 
 const Home = () => {
-  var productsSliderOptions = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-  };
-
   return (
     <>
       <HomeBanner />
@@ -26,130 +22,387 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-ml-1 productRow "></div>
+            <div className="col-ml-1 productRow"></div>
             <div className="d-flex align-items-left">
               <div className="info w-100 align-items-d-flex">
                 <h3 className="hd w-100">BEST SELLERS</h3>
-                <p className="text-light text-sml mb-10 w-100  ">
-                  {" "}
-                  Do not miss the current offers{" "}
+                <p className="text-light text-sml mb-10 w-100">
+                  Do not miss the current offers
                 </p>
               </div>
-              <div className="button-container" >
+              <div className="button-container">
                 <Button className="viewAllBtn mb-10">
                   View all <IoIosArrowRoundForward />
                 </Button>
 
                 <div className="product_row">
-                  {/* <Slider {...productsSliderOptions}>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
-                          alt=""
-                          className="w-100"
-                        />
-                      </div>
-                    </div>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
-                          alt=""
-                          className="w-100"
-                        />
-                      </div>
-                    </div>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
-                          alt=""
-                          className="w-100"
-                        />
-                      </div>
-                    </div>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
-                          alt=""
-                          className="w-100"
-                        />
-                      </div>
-                    </div>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
-                          alt=""
-                          className="w-100"
-                        />
-                      </div>
-                    </div>
-                    
-
-                  </Slider>  */}
                   <div className="ItemSection">
-                    <Slider {...productsSliderOptions}>
-                      
-                      
-                      <div className="item productItem">
-                        <div className="imgWrapper">
-                          <img
-                            src="https://smartdoko.com/storage/products/thumb/1722489037_6437.jpg"
-                            alt=""
-                            className="w-100"
-                          />
+                    <Swiper
+                      slidesPerView={5}
+                      spaceBetween={10}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      modules={[Navigation]}
+                      className="mySwiper"
+                    >
+                      <SwiperSlide>
+                        <div className="item productItem">
+                          <div className="imgWrapper">
+                            <img
+                              src="https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXouY29tLm5wL3AvYWUyMGEwMzdhOGFlY2MwZjE3YzRkOGJiN2M4M2FhYjkuanBn_400x400q75.png_.webp"
+                              alt=""
+                              className="w-100"
+                            />
+                              <span className="badge badge-primary">22%</span>   
+                            <div className="info">
+                              {" "}
+                              <div className="text-success d-block">Item 1</div>
+                              <h5>
+                                {" "}
+                                Wega 32 Inch LED Smart Android 12 1GB RAM 8GB
+                                ROM{" "}
+                              </h5>
+                              <span>In Stock</span>
+                              <Rating
+                                className="mt-1 mb-2"
+                                name="read-only"
+                                value={5}
+                                readOnly
+                                size="small"
+                                precision={0.5}
+                              />
+                              <div className="d-flex">
+                                <span className="OldPrice mt-3 ml-1">
+                                  {" "}
+                                  Rs 50,000{" "}
+                                </span>
+                                <span className="Netprice text-danger mt-3 ml-2 ">
+                                  {" "}
+                                  Rs 47,999
+                                </span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div className="item productItem">
-                        <div className="imgWrapper">
-                          <img
-                            src="https://smartdoko.com/storage/products/thumb/1722489037_6437.jpg"
-                            alt=""
-                            className="w-100"
-                          />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="item productItem">
+                          <div className="imgWrapper">
+                            <img
+                              src="https://img.drz.lazcdn.com/static/np/p/68a381c0e23645cbceb90120a0a82652.jpg_400x400q80.jpg_.webp"
+                              alt=""
+                              className="w-100"
+                            />
+                            <span className="badge badge-primary">18%</span>  
+                            <div className="info">
+                              {" "}
+                              <div className="text-success d-block">Item 2</div>
+                              <h5>
+                                {" "}
+                                Portable small Folding Laptop Table - With
+                                Versatile Feature{" "}
+                              </h5>
+                              <span>In Stock</span>
+                              <Rating
+                                className="mt-1 mb-2"
+                                name="read-only"
+                                value={5}
+                                readOnly
+                                size="small"
+                                precision={0.5}
+                              />
+                              <div className="d-flex">
+                                <span className="OldPrice mt-3 ml-1">
+                                  {" "}
+                                  Rs 1,400{" "}
+                                </span>
+                                <span className="Netprice text-danger mt-3 ml-2 ">
+                                  {" "}
+                                  Rs 1,250
+                                </span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div className="item productItem">
-                        <div className="imgWrapper">
-                          <img
-                            src="https://smartdoko.com/storage/products/resized/1721547959_9570.jpg"
-                            alt=""
-                            className="w-100"
-                          />
+                      </SwiperSlide>{" "}
+                      <SwiperSlide>
+                        <div className="item productItem">
+                          <div className="imgWrapper">
+                            <img
+                              src="https://img.drz.lazcdn.com/static/np/p/b1e8015a2f1104125b41ac76be7b5e23.png_400x400q80.png_.webp"
+                              alt=""
+                              className="w-100 mt-1"
+                            />
+                            <span className="badge badge-primary">17%</span>  
+                            <div className="info">
+                              {" "}
+                              <div className="text-success d-block">Item 3</div>
+                              <h5 className="mt-4">
+                                {" "}
+                                Large Capacity Handy Canvis Solid Letter Tote
+                                Bag{" "}
+                              </h5>
+                              <span>In Stock</span>
+                              <Rating
+                                className="mt-1 mb-2"
+                                name="read-only"
+                                value={5}
+                                readOnly
+                                size="small"
+                                precision={0.5}
+                              />
+                              <div className="d-flex">
+                                <span className="OldPrice mt-3 ml-1">
+                                  {" "}
+                                  Rs 1,950{" "}
+                                </span>
+                                <span className="Netprice text-danger mt-3 ml-2 ">
+                                  {" "}
+                                  Rs 1,799
+                                </span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div className="item productItem">
-                        <div className="imgWrapper">
-                          <img
-                            src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
-                            alt=""
-                            className="w-100"
-                          />
+                      </SwiperSlide>{" "}
+                      <SwiperSlide>
+                        <div className="item productItem">
+                          <div className="imgWrapper">
+                            <img
+                              src="https://img.drz.lazcdn.com/static/np/p/37614cf25842cbb472f34c43f0d6ef50.jpg_400x400q80.jpg_.webp"
+                              alt=""
+                              className="w-100"
+                            />
+                            <span className="badge badge-primary">27%</span>  
+                            <div className="info">
+                              {" "}
+                              <div className="text-success d-block">Item 4</div>
+                              <h5>
+                                {" "}
+                                Foldable Wardrobe Clothes Organizer for Jeans,  Drawer Organizer {" "}
+                              </h5>
+                              <span>In Stock</span>
+                              <Rating
+                                className="mt-1 mb-2"
+                                name="read-only"
+                                value={5}
+                                readOnly
+                                size="small"
+                                precision={0.5}
+                              />
+                              <div className="d-flex">
+                                <span className="OldPrice mt-3 ml-1">
+                                  {" "}
+                                  Rs 1,400{" "}
+                                </span>
+                                <span className="Netprice text-danger mt-3 ml-2 ">
+                                  {" "}
+                                  Rs 1,250
+                                </span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-
-                      <div className="item productItem">
-                        <div className="imgWrapper">
-                          <img
-                            src="https://smartdoko.com/storage/products/thumb/1719317298_5712.jpg"
-                            alt=""
-                            className="w-100"
-                          />
+                      </SwiperSlide>{" "}
+                      <SwiperSlide>
+                        <div className="item productItem">
+                          <div className="imgWrapper">
+                            <img
+                              src="https://img.drz.lazcdn.com/static/np/p/09bd51742e27827366ccb87f19c6f376.jpg_400x400q80.jpg_.webp"
+                              alt=""
+                              className="w-100"
+                            />
+                            <span className="badge badge-primary">20%</span>  
+                            <div className="info">
+                              {" "}
+                              <div className="text-success d-block">Item 5</div>
+                              <h5>
+                                {" "}
+                                Brown PU Leather Casual Bi Fold Wallet For Men | Brown Solid Wallet{" "}
+                              </h5>
+                              <span>In Stock</span>
+                              <Rating
+                                className="mt-1 mb-2"
+                                name="read-only"
+                                value={5}
+                                readOnly
+                                size="small"
+                                precision={0.5}
+                              />
+                              <div className="d-flex">
+                                <span className="OldPrice mt-3 ml-1">
+                                  {" "}
+                                  Rs 1,900{" "}
+                                </span>
+                                <span className="Netprice text-danger mt-3 ml-2 ">
+                                  {" "}
+                                  Rs 1,750
+                                </span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div className="item productItem">
-                        <div className="imgWrapper">
-                          <img
-                            src="https://smartdoko.com/storage/products/thumb/1719317298_5712.jpg"
-                            alt=""
-                            className="w-100"
-                          />
+                      </SwiperSlide>{" "}
+                      <SwiperSlide>
+                        <div className="item productItem">
+                          <div className="imgWrapper">
+                            <img
+                              src="https://img.drz.lazcdn.com/g/kf/Sdfa89ca24dc14dc7a19177d202525551w.jpg_400x400q80.jpg_.webp"
+                              alt=""
+                              className="w-100"
+                            />
+                            <span className="badge badge-primary">16%</span>  
+                            <div className="info">
+                              {" "}
+                              <div className="text-success d-block">Item 6</div>
+                              <h5>
+                                {" "}
+                                Summer Men's Slides Brand Men Women Slippers Indoor Sandals  {" "}
+                              </h5>
+                              <span>In Stock</span>
+                              <Rating
+                                className="mt-1 mb-2"
+                                name="read-only"
+                                value={5}
+                                readOnly
+                                size="small"
+                                precision={0.5}
+                              />
+                              <div className="d-flex">
+                                <span className="OldPrice mt-3 ml-1">
+                                  {" "}
+                                  Rs 1,099{" "}
+                                </span>
+                                <span className="Netprice text-danger mt-3 ml-2 ">
+                                  {" "}
+                                  Rs 1,005
+                                </span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </Slider>
+                      </SwiperSlide>{" "}
+                      <SwiperSlide>
+                        <div className="item productItem">
+                          <div className="imgWrapper">
+                            <img
+                              src="https://smartdoko.com/storage/products/resized/1720692455_3374.jpg"
+                              alt=""
+                              className="w-100"
+                            />
+                            <span className="badge badge-primary">13%</span>  
+                            <div className="info">
+                              {" "}
+                              <div className="text-success d-block">Item 7</div>
+                              <h5>
+                                {" "}
+                                Makkuse Classic Trio Combo pack| Home made | Authentic{" "}
+                              </h5>
+                              <span>In Stock</span>
+                              <Rating
+                                className="mt-1 mb-2"
+                                name="read-only"
+                                value={5}
+                                readOnly
+                                size="small"
+                                precision={0.5}
+                              />
+                              <div className="d-flex">
+                                <span className="OldPrice mt-3 ml-1">
+                                  {" "}
+                                  Rs 1,567{" "}
+                                </span>
+                                <span className="Netprice text-danger mt-3 ml-2 ">
+                                  {" "}
+                                  Rs 1,360
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </SwiperSlide>{" "}
+                      <SwiperSlide>
+                        <div className="item productItem">
+                          <div className="imgWrapper">
+                            <img
+                              src="https://img.drz.lazcdn.com/static/np/p/d60298ee53f9f5b5e51846ec4c39142b.png_400x400q80.png_.webp"
+                              alt=""
+                              className="w-100"
+                            />
+                            <span className="badge badge-primary">17%</span>  
+                            <div className="info">
+                              {" "}
+                              <div className="text-success d-block">Item 8</div>
+                              <h5>
+                                {" "}
+                                Ultima Blaze Gaming Earbuds with ANC | 42 Hours
+                                Playtime 
+                               {" "}
+                              </h5>
+                              <span>In Stock</span>
+                              <Rating
+                                className="mt-1 mb-2"
+                                name="read-only"
+                                value={5}
+                                readOnly
+                                size="small"
+                                precision={0.5}
+                              />
+                              <div className="d-flex">
+                                <span className="OldPrice mt-3 ml-1">
+                                  {" "}
+                                  Rs 5,000{" "}
+                                </span>
+                                <span className="Netprice text-danger mt-3 ml-2 ">
+                                  {" "}
+                                  Rs 4,700
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </SwiperSlide>{" "}
+                      <SwiperSlide>
+                        <div className="item productItem">
+                          <div className="imgWrapper ">
+                            <img
+                              src="https://img.drz.lazcdn.com/static/np/p/c39ec1cc237c06eff810c6ea6d625e04.jpg_720x720q80.jpg_.webp"
+                              alt=""
+                              className="w-100 " 
+                            />
+                            <span className="badge badge-primary ">23%</span>  
+                            <div className="info">
+                              {" "}
+                              <div className="text-success d-block">Item 9</div>
+                              <h5>
+                                {" "}
+                                Winter Unisex Indoor Slippers | Washable | Type : Rare{" "}
+                              </h5>
+                              <span>In Stock</span>
+                              <Rating
+                                className="mt-1 mb-2"
+                                name="read-only"
+                                value={5}
+                                readOnly
+                                size="small"
+                                precision={0.5}
+                              />
+                              <div className="d-flex">
+                                <span className="OldPrice mt-3 ml-1">
+                                  {" "}
+                                  Rs 1,079{" "}
+                                </span>
+                                <span className="Netprice text-danger mt-3 ml-2 ">
+                                  {" "}
+                                  Rs 879
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    </Swiper>
                   </div>
                 </div>
               </div>

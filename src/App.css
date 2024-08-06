@@ -19,7 +19,6 @@ body {
 
 .container {
   max-width: 90%;
-  
 }
 
 .cursor {
@@ -490,9 +489,7 @@ nav .navpart2 ul li:hover .submenu {
   width: 100%;
   border-radius: 7px;
   overflow: hidden;
-
 }
-
 
 .info .text-light {
   font-size: 15px;
@@ -501,20 +498,18 @@ nav .navpart2 ul li:hover .submenu {
   margin-top: 10px;
 }
 .info .hd {
-  
   font-size: 25px;
   font-weight: 500;
   margin-top: -300px;
   margin-left: 320px;
-  
 }
 
 .d-flex {
   display: flex !important;
 }
 
- .container .viewAllBtn {
-position: relative;
+.container .viewAllBtn {
+  position: relative;
   padding: 4px 7px !important;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
@@ -522,12 +517,11 @@ position: relative;
   width: 110px;
   left: 65rem;
   top: -35rem;
-  margin-top:25%;
+  margin-top: 25%;
   border-radius: 10%;
   color: #2bbef9;
   font-weight: 600;
   text-transform: capitalize !important;
-  
 }
 
 .container .viewAllBtn svg {
@@ -545,8 +539,7 @@ position: relative;
   opacity: 0.5;
 }
 
-
- .homeProducts .product_row .slick-prev {
+.homeProducts .product_row .slick-prev {
   margin-left: -59px;
   background: black;
   z-index: 100;
@@ -555,41 +548,77 @@ position: relative;
   right: 5px !important;
   margin-top: 0.5rem;
   background: black;
-  
-} 
+}
 /*Item bahira ko box */
 .product_row {
-  width:1150px;
-  height:auto ;
+  width: 1190px;
+  height: 460px;
   border: 1px solid rgba(199, 7, 7, 0.1);
-  margin-left:-6rem;
+  margin-left: -6rem;
   margin-top: -34rem;
-  
 }
 /*item haru bhako box*/
-.product_row .ItemSection{
-  width: 1150px;
-  margin-top: -12px;
+.product_row .ItemSection {
+  width: 1175px;
+  margin-top: -29px;
+  padding: 6px;
+  margin-left: 13px;
 }
 .product_row .imgWrapper {
   width: 200px;
-  height: 350px;
-  padding: 10px ;
-  margin-top: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1)
+  height: 420px;
+  padding: 10px;
+  margin-top: 38px;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+}
 
+.slick-list .slick-track {
+  margin-left: 15px;
 }
-.slick-list .slick-track{
-margin-left: 15px;
-}
-.item .productItem{
+/* .item .productItem{
   padding: 15px;
+} */
+/*Item description*/
+.productItem {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
 }
-
-
-
-
-
-
-
-
+.productItem .badge {
+  display: inline-block;
+  padding: 7px 10px;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  z-index: 100;
+}
+.productItem .info {
+  padding: 1px;
+}
+.productItem .info .h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.productItem .info .OldPrice {
+  text-decoration: line-through;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4);
+}
+.productItem .info .Netprice {
+  font-size: 18px !important;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4);
+}
+.product_row .item {
+  border-right: 1px solid transparent !important;
+}
+/* .product_row .swiper-slide:last-child .productItem {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  margin-top: -10px;
+  margin-right: -3px;
+} */
+.swiper {
+  padding-right: 1px !important;
+}
