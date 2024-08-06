@@ -10,7 +10,7 @@ const Home = () => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
   };
 
@@ -20,23 +20,23 @@ const Home = () => {
       <section className="homeProducts">
         <div className="container">
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-md-4.5">
               <div className="banner">
                 <img src={banner1} alt="banner1" className="cursor w-100" />
               </div>
             </div>
 
-            <div className="col-ml-2 productRow"></div>
+            <div className="col-ml-1 productRow "></div>
             <div className="d-flex align-items-left">
-              <div className="info w-100">
-                <h3 className="ml-0 hd">BEST SELLERS</h3>
-                <p className="text-light text-sml mb-0 ">
+              <div className="info w-100 align-items-d-flex">
+                <h3 className="hd">BEST SELLERS</h3>
+                <p className="text-light text-sml mb-10  ">
                   {" "}
                   Do not miss the current offers{" "}
                 </p>
               </div>
-              <div className="button-container" style={{ marginLeft: "auto" }}>
-                <Button className="viewAllBtn">
+              <div className="button-container" >
+                <Button className="viewAllBtn mb-10">
                   View all <IoIosArrowRoundForward />
                 </Button>
 
@@ -51,13 +51,62 @@ const Home = () => {
                         />
                       </div>
                     </div>
+                    <div className="item productItem">
+                      <div className="imgWrapper">
+                        <img
+                          src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
+                          alt=""
+                          className="w-100"
+                        />
+                      </div>
+                    </div>
+                    <div className="item productItem">
+                      <div className="imgWrapper">
+                        <img
+                          src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
+                          alt=""
+                          className="w-100"
+                        />
+                      </div>
+                    </div>
+                    <div className="item productItem">
+                      <div className="imgWrapper">
+                        <img
+                          src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
+                          alt=""
+                          className="w-100"
+                        />
+                      </div>
+                    </div>
+                    <div className="item productItem">
+                      <div className="imgWrapper">
+                        <img
+                          src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
+                          alt=""
+                          className="w-100"
+                        />
+                      </div>
+                    </div>
+                    
+
                   </Slider>  */}
-                  <div className="homeBannerSection">
+                  <div className="ItemSection">
                     <Slider {...productsSliderOptions}>
+                      
+                      
                       <div className="item productItem">
                         <div className="imgWrapper">
                           <img
-                            src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
+                            src="https://smartdoko.com/storage/products/thumb/1722489037_6437.jpg"
+                            alt=""
+                            className="w-100"
+                          />
+                        </div>
+                      </div>
+                      <div className="item productItem">
+                        <div className="imgWrapper">
+                          <img
+                            src="https://smartdoko.com/storage/products/thumb/1722489037_6437.jpg"
                             alt=""
                             className="w-100"
                           />
@@ -75,13 +124,22 @@ const Home = () => {
                       <div className="item productItem">
                         <div className="imgWrapper">
                           <img
-                            src="https://smartdoko.com/storage/products/thumb/1722489037_6437.jpg"
+                            src="https://smartdoko.com/storage/products/resized/1720333109_7633.png"
                             alt=""
                             className="w-100"
                           />
                         </div>
                       </div>
 
+                      <div className="item productItem">
+                        <div className="imgWrapper">
+                          <img
+                            src="https://smartdoko.com/storage/products/thumb/1719317298_5712.jpg"
+                            alt=""
+                            className="w-100"
+                          />
+                        </div>
+                      </div>
                       <div className="item productItem">
                         <div className="imgWrapper">
                           <img

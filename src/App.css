@@ -483,83 +483,114 @@ nav .navpart2 ul li:hover .submenu {
 
 .homeProducts {
   padding: 25px 0px;
-  width: 100%;
+  width: 80%;
 }
 .homeProducts .banner {
   width: 100%;
   border-radius: 7px;
-  overflow: hidden;
+  /* overflow: hidden; */
+
 }
+
 
 .info .text-light {
   font-size: 15px;
   font-weight: 600;
+  margin-left: 20rem;
+  margin-top: -10rem;
+  display:  inline-block;
 }
-.productRow .hd {
+.info .hd {
+  
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
+  margin-top: -20rem;
+ align-items: center;
+  
+}
+.container .productRow .text-sml {
+  margin-left: -40px;
 }
 .d-flex {
   display: flex !important;
 }
 
 .container .viewAllBtn {
+
   padding: 4px 7px !important;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   height: 50px;
   width: 110px;
-  top: -1%;
-  margin-left: 52rem;
-  border-radius: 40%;
+  left: 65rem;
+  top: -37rem;
+  margin-top:25%;
+  border-radius: 10%;
   color: #2bbef9;
   font-weight: 600;
   text-transform: capitalize !important;
   
 }
+
 .container .viewAllBtn svg {
   font-size: 20px;
   font-weight: 650;
 }
-/* .homeProducts .product_row .slick-arrow {
+.homeProducts .product_row .slick-arrow {
   position: absolute;
-  top: 450%;
+  top: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px !important;
   height: 30px !important;
   background: #140f0f;
   border-radius: 100%;
-  z-index: 100;
-} */
+  opacity: 0.5;
+}
 
 
  .homeProducts .product_row .slick-prev {
-  left: 10rem !important;
- margin-top: -25rem;
+  margin-left: -55px;
+  background: black;
+  z-index: 100;
 }
 .homeProducts .product_row .slick-next {
-  right: -15rem !important;
-  margin-top: -25rem;
+  right: 5px !important;
+  margin-top: 0.5rem;
+  background: black;
   
-}
-.slick-next::before {
-  color: rgb(237, 227, 227);
 } 
- 
-
+/*Item bahira ko box */
 .product_row {
-  width: 90%;
+  width:1150px;
   height:auto ;
   border: 1px solid rgba(199, 7, 7, 0.1);
+  margin-left: -2rem;
+  margin-top: -34rem;
   
+}
+/*item haru bhako box*/
+.product_row .ItemSection{
+  width: 1150px;
+  margin-top: -12px;
 }
 .product_row .imgWrapper {
   width: 200px;
-  height: 200px;
-  padding: 10px;
+  height: 350px;
+  padding: 10px ;
+  margin-top: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1)
+
 }
+.slick-list .slick-track{
+margin-left: 15px;
+}
+.item .productItem{
+  padding: 15px;
+}
+
+
+
+
 
 
 
