@@ -1,45 +1,12 @@
-import HomeBanner from "../../Components/HomeBanner";
-import { Button } from "@mui/material";
-import banner1 from "../../assests/images/Banner1.png";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+// import { Button } from "@mui/material";
 import Rating from "@mui/material/Rating";
-import { AiOutlineFullscreen } from "react-icons/ai";
-import productItem from "../../Components/ProductItem";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
-const Home = () => {
+
+const ProductItem = () => {
   return (
-    <>
-      <HomeBanner />
-      <section className="homeProducts">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4.5">
-              <div className="banner">
-                <img src={banner1} alt="banner1" className="cursor w-100" />
-              </div>
-            </div>
-
-            <div className="col-ml-1 productRow"></div>
-            <div className="d-flex align-items-left">
-              <div className="info w-100 align-items-d-flex">
-                <h3 className="hd w-100">BEST SELLERS</h3>
-                <p className="text-light text-sml mb-10 w-100">
-                  Do not miss the current offers
-                </p>
-              </div>
-              <div className="button-container">
-                <Button className="viewAllBtn mb-10">
-                  View all <IoIosArrowRoundForward />
-                </Button>
-
-                <div className="product_row">
-                  <div className="ItemSection">
-                    <Swiper
+    <Swiper
                       slidesPerView={5}
                       spaceBetween={10}
                       pagination={{
@@ -48,9 +15,46 @@ const Home = () => {
                       modules={[Navigation]}
                       className="mySwiper"
                     >
+                      
                       <SwiperSlide>
-                        <productItem/>
-                      </SwiperSlide>
+                        <div className="item productItem">
+                          <div className="imgWrapper">
+                            <img
+                              src="https://img.drz.lazcdn.com/static/np/p/9963edcd6c3a25f2a783804509a76d05.jpg_720x720q80.jpg_.webp"
+                              alt=""
+                              className="w-100"
+                            />
+                            <span className="badge badge-primary">27%</span>  
+                            <div className="info">
+                              {" "}
+                              <div className="text-success d-block">Item 2</div>
+                              <h5>
+                                {" "}
+                                Wega 32 Inch Frameless Led Smart Android 12 1GB RAM 8GB {" "}
+                              </h5>
+                              <span>In Stock</span>
+                              <Rating
+                                className="mt-1 mb-2"
+                                name="read-only"
+                                value={5}
+                                readOnly
+                                size="small"
+                                precision={0.5}
+                              />
+                              <div className="d-flex">
+                                <span className="OldPrice mt-3 ml-1">
+                                  {" "}
+                                  Rs 21,990{" "}
+                                </span>
+                                <span className="Netprice text-danger mt-3 ml-2 ">
+                                  {" "}
+                                  Rs 16,028
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </SwiperSlide>{" "}
                       <SwiperSlide>
                         <div className="item productItem">
                           <div className="imgWrapper">
@@ -368,15 +372,7 @@ const Home = () => {
                         </div>
                       </SwiperSlide>
                     </Swiper>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+    
   );
 };
-
-export default Home;
+export default ProductItem;

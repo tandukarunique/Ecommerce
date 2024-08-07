@@ -8,8 +8,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Rating from "@mui/material/Rating";
-import { AiOutlineFullscreen } from "react-icons/ai";
-import productItem from "../../Components/ProductItem";
+// import { AiOutlineFullscreen } from "react-icons/ai";
+import ProductItem from "../../Components/ProductItem";
 
 const Home = () => {
   return (
