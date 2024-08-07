@@ -1,7 +1,9 @@
-// import { Button } from "@mui/material";
+import { Button } from "@mui/material";
 import Rating from "@mui/material/Rating";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { AiOutlineFullscreen } from "react-icons/ai";
+import { CiHeart } from "react-icons/ci";
 
 
 const ProductItem = () => {
@@ -18,16 +20,20 @@ const ProductItem = () => {
                       
                       <SwiperSlide>
                         <div className="item productItem">
-                          <div className="imgWrapper">
+                          <div className="imgWrapper ">
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/9963edcd6c3a25f2a783804509a76d05.jpg_720x720q80.jpg_.webp"
                               alt=""
-                              className="w-100"
+                              className=" w-100 mt-4"
                             />
-                            <span className="badge badge-primary">27%</span>  
+                            <span className="badge badge-primary">27%</span> 
+                            <div className="actions">
+                            <Button><CiHeart /></Button>
+                              <Button><AiOutlineFullscreen />
+                              </Button></div> 
                             <div className="info">
                               {" "}
-                              <div className="text-success d-block">Item 2</div>
+                              <div className="text-success d-block">Item 1</div>
                               <h5>
                                 {" "}
                                 Wega 32 Inch Frameless Led Smart Android 12 1GB RAM 8GB {" "}
@@ -61,9 +67,13 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/68a381c0e23645cbceb90120a0a82652.jpg_400x400q80.jpg_.webp"
                               alt=""
-                              className="w-100"
+                              className="w-100 mt-4"
                             />
-                            <span className="badge badge-primary">18%</span>  
+                            <span className="badge badge-primary">18%</span> 
+                            <div className="actions">
+                              <Button><CiHeart /></Button>
+                              <Button><AiOutlineFullscreen />
+                              </Button></div>  
                             <div className="info">
                               {" "}
                               <div className="text-success d-block">Item 2</div>
@@ -101,9 +111,13 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/b1e8015a2f1104125b41ac76be7b5e23.png_400x400q80.png_.webp"
                               alt=""
-                              className="w-100 mt-1"
+                              className="w-100 mt-4"
                             />
-                            <span className="badge badge-primary">17%</span>  
+                            <span className="badge badge-primary">17%</span> 
+                            <div className="actions">
+                            <Button><CiHeart /></Button>
+                              <Button><AiOutlineFullscreen />
+                              </Button></div>  
                             <div className="info">
                               {" "}
                               <div className="text-success d-block">Item 3</div>
@@ -141,9 +155,13 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/37614cf25842cbb472f34c43f0d6ef50.jpg_400x400q80.jpg_.webp"
                               alt=""
-                              className="w-100"
+                              className="w-100 mt-4"
                             />
                             <span className="badge badge-primary">27%</span>  
+                            <div className="actions">
+                            <Button><CiHeart /></Button>
+                              <Button><AiOutlineFullscreen />
+                              </Button></div> 
                             <div className="info">
                               {" "}
                               <div className="text-success d-block">Item 4</div>
@@ -180,9 +198,13 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/09bd51742e27827366ccb87f19c6f376.jpg_400x400q80.jpg_.webp"
                               alt=""
-                              className="w-100"
+                              className="w-100 mt-4"
                             />
-                            <span className="badge badge-primary">20%</span>  
+                            <span className="badge badge-primary">20%</span> 
+                            <div className="actions">
+                            <Button><CiHeart /></Button>
+                              <Button><AiOutlineFullscreen />
+                              </Button></div>  
                             <div className="info">
                               {" "}
                               <div className="text-success d-block">Item 5</div>
@@ -219,9 +241,13 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/g/kf/Sdfa89ca24dc14dc7a19177d202525551w.jpg_400x400q80.jpg_.webp"
                               alt=""
-                              className="w-100"
+                              className="w-100 mt-4"
                             />
                             <span className="badge badge-primary">16%</span>  
+                            <div className="actions">
+                            <Button><CiHeart /></Button>
+                              <Button><AiOutlineFullscreen />
+                              </Button></div> 
                             <div className="info">
                               {" "}
                               <div className="text-success d-block">Item 6</div>
@@ -258,9 +284,13 @@ const ProductItem = () => {
                             <img
                               src="https://smartdoko.com/storage/products/resized/1720692455_3374.jpg"
                               alt=""
-                              className="w-100"
+                              className="w-100 mt-4"
                             />
-                            <span className="badge badge-primary">13%</span>  
+                            <span className="badge badge-primary">13%</span> 
+                            <div className="actions">
+                            <Button><CiHeart /></Button>
+                              <Button><AiOutlineFullscreen />
+                              </Button></div>  
                             <div className="info">
                               {" "}
                               <div className="text-success d-block">Item 7</div>
@@ -297,9 +327,13 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/d60298ee53f9f5b5e51846ec4c39142b.png_400x400q80.png_.webp"
                               alt=""
-                              className="w-100"
+                              className="w-100 mt-4"
                             />
-                            <span className="badge badge-primary">17%</span>  
+                            <span className="badge badge-primary">17%</span> 
+                            <div className="actions">
+                            <Button><CiHeart /></Button>
+                              <Button><AiOutlineFullscreen />
+                              </Button></div>  
                             <div className="info">
                               {" "}
                               <div className="text-success d-block">Item 8</div>
@@ -338,9 +372,13 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/c39ec1cc237c06eff810c6ea6d625e04.jpg_720x720q80.jpg_.webp"
                               alt=""
-                              className="w-100 " 
+                              className="w-100 mt-4" 
                             />
                             <span className="badge badge-primary ">23%</span>  
+                            <div className="actions">
+                            <Button><CiHeart style/></Button>
+                              <Button><AiOutlineFullscreen />
+                              </Button></div> 
                             <div className="info">
                               {" "}
                               <div className="text-success d-block">Item 9</div>

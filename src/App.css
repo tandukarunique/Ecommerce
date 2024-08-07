@@ -450,6 +450,7 @@ nav .navpart2 ul li:hover .submenu {
   position: relative;
   overflow: hidden;
 }
+
 .homeBannerSection .slick-arrow {
   /*prev next arrow ko lagi*/
   position: absolute;
@@ -462,7 +463,10 @@ nav .navpart2 ul li:hover .submenu {
   height: 30px !important;
   background: #444444;
   border-radius: 100%;
-  font-family: Fontawesome !important;
+  /* font-family: Fontawesome !important; */
+  box-shadow:
+    0 1px 3px rgba(0 0 0 / 12%),
+    0 1px 2px rgba(0 0 0 / 24%) !important;
 }
 
 .slick-prev {
@@ -552,17 +556,17 @@ nav .navpart2 ul li:hover .submenu {
 /*Item bahira ko box */
 .product_row {
   width: 1190px;
-  height: 460px;
-  border: 1px solid rgba(199, 7, 7, 0.1);
+  height: 760px;
+  /* border: 1px solid rgba(199, 7, 7, 0.1); */
   margin-left: -6rem;
   margin-top: -34rem;
 }
 /*item haru bhako box*/
 .product_row .ItemSection {
   width: 1175px;
-  margin-top: -29px;
+  margin-top: -25px;
   padding: 6px;
-  margin-left: 13px;
+  margin-left: -3px;
 }
 .product_row .imgWrapper {
   width: 200px;
@@ -575,9 +579,7 @@ nav .navpart2 ul li:hover .submenu {
 .slick-list .slick-track {
   margin-left: 15px;
 }
-/* .item .productItem{
-  padding: 15px;
-} */
+
 /*Item description*/
 .productItem {
   font-size: 14px;
@@ -585,11 +587,12 @@ nav .navpart2 ul li:hover .submenu {
   cursor: pointer;
   position: relative;
 }
+/*Discount ko*/
 .productItem .badge {
   display: inline-block;
   padding: 7px 10px;
   position: absolute;
-  top: 9px;
+  top: 6px;
   left: 9px;
   z-index: 100;
 }
@@ -614,13 +617,65 @@ nav .navpart2 ul li:hover .submenu {
 .product_row .item {
   border-right: 1px solid transparent !important;
 }
-/* .product_row .swiper-slide:last-child .productItem {
+/*Add to wishlist button and expand*/
+.productItem .actions {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -1050%;
+  top: 6px;
+  font-size: 10px;
+  z-index: 1000;
+  padding: 1px;
+  gap:5px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+.productItem .actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 25px !important;
+  min-width: 35px !important;
+  height: 35px !important;
+  width: 30px !important;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
-  margin-top: -10px;
-  margin-right: -3px;
-} */
+  border-radius: 50% !important;
+  background: white;
+  opacity: 0.9;
+  box-shadow:
+    0 1px 3px rgba(0 0 0 / 12%),
+    0 1px 2px rgba(0 0 0 / 24%) !important;
+    
+}
+.productItem .actions button:hover{
+  background: #6fc8eb;
+}
+.productItem .actions button:hover svg {
+  color: white !important;
+}
+.productItem .actions svg {
+  font-size: 20px !important ;
+  pointer-events: none;
+  font-weight: 600;
+}
+.productItem .imgWrapper {
+  overflow: hidden;
+}
+.productItem .imgWrapper img{transition: all 0.3s ease-in-out;}
+/*Product item ko image ma hover garda actions ko */
+.productItem .imgWrapper:hover .actions{
+opacity: 1;
+right: 10px;
+}
+/*Image on pointed get bigger*/
+.productItem .imgWrapper:hover img{
+  transform: scale(1.1);
+}
 .swiper {
   padding-right: 1px !important;
 }
-.badge-primary{background: #2bbef9 !important;}
-
+.badge-primary {
+  background: #2bbef9 !important;
+}

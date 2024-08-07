@@ -38,12 +38,40 @@ const Home = () => {
                 <div className="product_row">
                   <div className="ItemSection">
                     <ProductItem/>
+                    
                   </div>
                 </div>
               </div>
             </div>
+
+
+
+
+            <div className="d-flex align-items-left mt-5">
+              <div className="info w-100 align-items-d-flex">
+                <h3 className="hd w-100">New Products</h3>
+                <p className="text-light text-sml mb-10 w-100 ">
+                  New Products with updated stocks
+                </p>
+              </div>
+              <div className="button-container">
+                <Button className="viewAllBtn mb-10">
+                  View all <IoIosArrowRoundForward />
+                </Button>
+
+                <div className="product_row">
+                  <div className="ItemSection">
+                    <ProductItem/>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
           </div>
+          
         </div>
+        
       </section>
     </>
   );
