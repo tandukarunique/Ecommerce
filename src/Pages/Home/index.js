@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import ProductItem from "../../Components/ProductItem";
 
 const Home = () => {
+  
   return (
     <>
       <HomeBanner />

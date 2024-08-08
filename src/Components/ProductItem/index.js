@@ -67,7 +67,7 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/68a381c0e23645cbceb90120a0a82652.jpg_400x400q80.jpg_.webp"
                               alt=""
-                              className="w-100 mt-4"
+                              className="w-100"
                             />
                             <span className="badge badge-primary">18%</span> 
                             <div className="actions">
@@ -155,7 +155,7 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/37614cf25842cbb472f34c43f0d6ef50.jpg_400x400q80.jpg_.webp"
                               alt=""
-                              className="w-100 mt-4"
+                              className="w-100"
                             />
                             <span className="badge badge-primary">27%</span>  
                             <div className="actions">
@@ -198,7 +198,7 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/09bd51742e27827366ccb87f19c6f376.jpg_400x400q80.jpg_.webp"
                               alt=""
-                              className="w-100 mt-4"
+                              className="w-100"
                             />
                             <span className="badge badge-primary">20%</span> 
                             <div className="actions">
@@ -241,7 +241,7 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/g/kf/Sdfa89ca24dc14dc7a19177d202525551w.jpg_400x400q80.jpg_.webp"
                               alt=""
-                              className="w-100 mt-4"
+                              className="w-100"
                             />
                             <span className="badge badge-primary">16%</span>  
                             <div className="actions">
@@ -284,7 +284,7 @@ const ProductItem = () => {
                             <img
                               src="https://smartdoko.com/storage/products/resized/1720692455_3374.jpg"
                               alt=""
-                              className="w-100 mt-4"
+                              className="w-100"
                             />
                             <span className="badge badge-primary">13%</span> 
                             <div className="actions">
@@ -327,7 +327,7 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/d60298ee53f9f5b5e51846ec4c39142b.png_400x400q80.png_.webp"
                               alt=""
-                              className="w-100 mt-4"
+                              className="w-100"
                             />
                             <span className="badge badge-primary">17%</span> 
                             <div className="actions">
@@ -372,11 +372,11 @@ const ProductItem = () => {
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/c39ec1cc237c06eff810c6ea6d625e04.jpg_720x720q80.jpg_.webp"
                               alt=""
-                              className="w-100 mt-4" 
+                              className="w-100 " 
                             />
                             <span className="badge badge-primary ">23%</span>  
                             <div className="actions">
-                            <Button><CiHeart style/></Button>
+                            <Button><CiHeart /></Button>
                               <Button><AiOutlineFullscreen />
                               </Button></div> 
                             <div className="info">
