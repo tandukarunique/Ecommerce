@@ -5,6 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import React from "react";
 import "swiper/css";
 import "swiper/css/navigation";
+import banner2 from "../../assests/images/banner2.webp"
 // import Rating from "@mui/material/Rating";
 // import { AiOutlineFullscreen } from "react-icons/ai";
 import ProductItem from "../../Components/ProductItem";
@@ -42,16 +43,27 @@ const Home = () => {
                     
                   </div>
                 </div>
+                
               </div>
             </div>
 
 
+            <div className="col-md-4">
+  <div className="banner" >
+    <img
+      src={banner2}
+      alt="banner2"
+      className="cursor w-90  mt-2" 
+      style={{ width: "260px", height: "400px",borderradius: "10"}}
+    />
+  </div>
+</div>
 
-
-            <div className="d-flex align-items-left mt-5">
+           
+            <div className="d-flex align-items-left mt-0">
               <div className="info w-100 align-items-d-flex">
-                <h3 className="hd w-100">New Products</h3>
-                <p className="text-light text-sml mb-10 w-100 ">
+                <h3 className="hd w-100"  style={{ marginTop: "-400px" }}>New Products</h3>
+                <p className="text-light text-sml mb-5 w-100 ">
                   New Products with updated stocks
                 </p>
               </div>
@@ -61,7 +73,7 @@ const Home = () => {
                 </Button>
 
                 <div className="product_row">
-                  <div className="ItemSection">
+                  <div className="ItemSection" >
                     <ProductItem/>
                   </div>
                 </div>

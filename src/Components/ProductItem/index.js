@@ -105,26 +105,26 @@ const ProductItem = () => {
                           </div>
                         </div>
                       </SwiperSlide>{" "}
-                      <SwiperSlide>
+                       <SwiperSlide>
                         <div className="item productItem">
                           <div className="imgWrapper">
                             <img
                               src="https://img.drz.lazcdn.com/static/np/p/b1e8015a2f1104125b41ac76be7b5e23.png_400x400q80.png_.webp"
                               alt=""
-                              className="w-100 mt-4"
+                              className="w-100"
                             />
                             <span className="badge badge-primary">17%</span> 
                             <div className="actions">
-                            <Button><CiHeart /></Button>
+                              <Button><CiHeart /></Button>
                               <Button><AiOutlineFullscreen />
                               </Button></div>  
                             <div className="info">
                               {" "}
-                              <div className="text-success d-block">Item 3</div>
-                              <h5 className="mt-4">
+                              <div className="text-success d-block">Item 2</div>
+                              <h5>
                                 {" "}
-                                Large Capacity Handy Canvis Solid Letter Tote
-                                Bag{" "}
+                                Portable small Folding Laptop Table - With
+                                Versatile Feature{" "}
                               </h5>
                               <span>In Stock</span>
                               <Rating
@@ -138,17 +138,19 @@ const ProductItem = () => {
                               <div className="d-flex">
                                 <span className="OldPrice mt-3 ml-1">
                                   {" "}
-                                  Rs 1,950{" "}
+                                  Rs 1,400{" "}
                                 </span>
                                 <span className="Netprice text-danger mt-3 ml-2 ">
                                   {" "}
-                                  Rs 1,799
+                                  Rs 1,250
                                 </span>
                               </div>
                             </div>
                           </div>
                         </div>
                       </SwiperSlide>{" "}
+
+                   
                       <SwiperSlide>
                         <div className="item productItem">
                           <div className="imgWrapper">
@@ -279,7 +281,7 @@ const ProductItem = () => {
                         </div>
                       </SwiperSlide>{" "}
                       <SwiperSlide>
-                        <div className="item productItem">
+                        <div className="item productItem" >
                           <div className="imgWrapper">
                             <img
                               src="https://smartdoko.com/storage/products/resized/1720692455_3374.jpg"

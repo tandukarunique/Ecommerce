@@ -408,11 +408,11 @@ nav .navpart2 ul li .submenu {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
-  z-index: 100;
 }
 nav .navpart2 ul li .submenu a {
   display: block;
   width: 100%;
+  z-index: 1000;
 }
 nav .navpart2 ul li .submenu a button {
   width: 100%;
@@ -421,6 +421,7 @@ nav .navpart2 ul li .submenu a button {
   border-bottom-right-radius: 30px;
   text-transform: capitalize !important;
   font-weight: 550 !important;
+  z-index: 1000;
 }
 nav .navpart2 ul li .submenu a button:hover {
   background: rgb(240, 236, 236) !important;
@@ -556,7 +557,7 @@ nav .navpart2 ul li:hover .submenu {
 /*Item bahira ko box */
 .product_row {
   width: 1190px;
-  height: 760px;
+  height: 500px;
   /* border: 1px solid rgba(199, 7, 7, 0.1); */
   margin-left: -6rem;
   margin-top: -34rem;
@@ -627,7 +628,7 @@ nav .navpart2 ul li:hover .submenu {
   font-size: 10px;
   z-index: 1000;
   padding: 1px;
-  gap:5px;
+  gap: 5px;
   transition: all 0.3s ease-in-out;
   z-index: 1000;
   transition: all 0.3s;
@@ -647,9 +648,8 @@ nav .navpart2 ul li:hover .submenu {
   box-shadow:
     0 1px 3px rgba(0 0 0 / 12%),
     0 1px 2px rgba(0 0 0 / 24%) !important;
-    
 }
-.productItem .actions button:hover{
+.productItem .actions button:hover {
   background: #6fc8eb;
 }
 .productItem .actions button:hover svg {
@@ -663,18 +663,21 @@ nav .navpart2 ul li:hover .submenu {
 .productItem .imgWrapper {
   overflow: hidden;
 }
-.productItem .imgWrapper img{transition: all 0.3s ease-in-out;}
+.productItem .imgWrapper img {
+  transition: all 0.3s ease-in-out;
+}
 /*Product item ko image ma hover garda actions ko */
-.productItem .imgWrapper:hover .actions{
-opacity: 1;
-right: 10px;
+.productItem .imgWrapper:hover .actions {
+  opacity: 1;
+  right: 10px;
 }
 /*Image on pointed get bigger*/
-.productItem .imgWrapper:hover img{
+.productItem .imgWrapper:hover img {
   transform: scale(1.1);
 }
 .swiper {
   padding-right: 1px !important;
+  margin-top: -20px;
 }
 .badge-primary {
   background: #2bbef9 !important;
