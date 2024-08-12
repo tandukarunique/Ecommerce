@@ -67,7 +67,7 @@ const Home = () => {
                   New Products with updated stocks
                 </p>
               </div>
-              <div className="button-container">
+              <div className="button-container" style={{ marginTop: '-110px' }}>
                 <Button className="viewAllBtn mb-10">
                   View all <IoIosArrowRoundForward />
                 </Button>
