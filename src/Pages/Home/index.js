@@ -9,12 +9,15 @@ import banner2 from "../../assests/images/banner2.webp"
 // import Rating from "@mui/material/Rating";
 // import { AiOutlineFullscreen } from "react-icons/ai";
 import ProductItem from "../../Components/ProductItem";
+import HomeCat from "../../Components/HomeCat";
 
 const Home = () => {
   
   return (
     <>
       <HomeBanner />
+      <HomeCat/>
+      
       <section className="homeProducts">
         <div className="container">
           <div className="row">
