@@ -15,6 +15,7 @@ import banner5 from "../../assests/images/Banner5.jpg";
 import bgnewsletter1 from "../../assests/images/bgnewsletter1.png";
 import { CiMail } from "react-icons/ci";
 
+
 const Home = () => {
   return (
     <>
@@ -169,10 +170,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <br />
-      <br />
-      <br />
-      <br />
+     
     </>
   );
 };
