@@ -5,20 +5,18 @@ import { Navigation } from "swiper/modules";
 import { AiOutlineFullscreen } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
 
-
 const ProductItem = () => {
   return (
     <Swiper
-                      slidesPerView={5}
-                      spaceBetween={10}
-                      pagination={{
-                        clickable: true,
-                      }}
-                      modules={[Navigation]}
-                      className="mySwiper"
-                    >
-                      
-                      <SwiperSlide>
+      slidesPerView={5}
+      spaceBetween={10}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[Navigation]}
+      className="mySwiper"
+    >
+      <div className="NewProduct">      <SwiperSlide>
                         <div className="item productItem">
                           <div className="imgWrapper ">
                             <img
@@ -410,9 +408,8 @@ const ProductItem = () => {
                             </div>
                           </div>
                         </div>
-                      </SwiperSlide>
-                    </Swiper>
-    
+                      </SwiperSlide></div>
+    </Swiper>
   );
 };
 export default ProductItem;
