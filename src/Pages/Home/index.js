@@ -151,7 +151,7 @@ const Home = () => {
               <form>
                 <CiMail />
                 <input type="text" />
-                <button>Submit</button>
+                <Button>Submit</Button>
               </form>
             </div>
             <div className="col-mb-2">
