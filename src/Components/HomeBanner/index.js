@@ -13,7 +13,8 @@ const HomeBanner = () => {
   };
 
   return (
-    <div className="homeBannerSection">
+    <div className="container">
+      <div className="homeBannerSection">
       <Slider {...settings}>
         <div className="item">
           <img
@@ -40,6 +41,7 @@ const HomeBanner = () => {
           />
         </div>
       </Slider>
+    </div>
     </div>
   );
 };
