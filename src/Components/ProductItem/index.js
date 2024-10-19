@@ -8,7 +8,7 @@ import { CiHeart } from "react-icons/ci";
 const ProductItem = () => {
   return (
     <Swiper
-      slidesPerView={5}
+      slidesPerView={7}
       spaceBetween={10}
       pagination={{
         clickable: true,

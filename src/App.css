@@ -564,16 +564,16 @@ nav .navpart2 ul li:hover .submenu {
 }
 /*item haru bhako box*/
 .product_row .ItemSection {
-  width: 1175px;
+  width: 120%;
   margin-top: -25px;
   padding: 6px;
-  margin-left: -3px;
+  
 }
 .product_row .ItemSection2 {
-  width: 1180px;
+  width: 120%;
   margin-top: 485px;
   padding: 0px;
-  margin-left: -3px;
+  
 }
 .product_row .imgWrapper {
   width: 200px;
