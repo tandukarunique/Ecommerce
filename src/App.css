@@ -237,7 +237,7 @@ header .part3 .circle svg {
 }
 
 .locationmodel .close_ {
-  position: absolute;
+  position: absolute !;
   top: -90px;
   right: -10px;
   min-width: 40px !important;
@@ -567,13 +567,11 @@ nav .navpart2 ul li:hover .submenu {
   width: 120%;
   margin-top: -25px;
   padding: 6px;
-  
 }
 .product_row .ItemSection2 {
   width: 120%;
   margin-top: 485px;
   padding: 0px;
-  
 }
 .product_row .imgWrapper {
   width: 200px;
@@ -909,3 +907,8 @@ footer .copyright ul li a svg {
 footer .copyright ul li a svg:hover {
   color: #908b8b;
 }
+.productModel.MuiPaper-elevation {
+  padding: 25px;
+  position: relative;
+}
+

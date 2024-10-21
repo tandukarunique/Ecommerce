@@ -15,7 +15,7 @@ const ProductItem = () => {
   const viewProductDetails = (id) => {
     setisOpenProductModel(true);
   };
-  const CloseProductModel = () => {
+  const closeProductModel = () => {
     setisOpenProductModel(false);
   };
   return (
@@ -432,7 +432,7 @@ const ProductItem = () => {
           </SwiperSlide>
         </div>
       </Swiper>
-      {isOpenProductModel === true && <ProductModel CloseProductModel={CloseProductModel}/>}
+      {isOpenProductModel === true && <ProductModel closeProductModel={closeProductModel}/>}
     </>
   );
 };
