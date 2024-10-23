@@ -628,14 +628,14 @@ nav .navpart2 ul li:hover .submenu {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: -1050%;
+  right: -490%;
   top: 6px;
   font-size: 10px;
-  z-index: 1000;
+  /* z-index: 10; */
   padding: 1px;
   gap: 5px;
   transition: all 0.3s ease-in-out;
-  z-index: 1000;
+  /* z-index: 1000; */
   transition: all 0.3s;
 }
 .productItem .actions button {
@@ -907,8 +907,16 @@ footer .copyright ul li a svg {
 footer .copyright ul li a svg:hover {
   color: #908b8b;
 }
+/*view more button thiche pachi khulne box*/
 .productModel.MuiPaper-elevation {
-  padding: 25px;
+  /* padding: 25px; */
   position: relative;
+  max-width: 900px !important;
+  width: 900px !important;
 }
-
+.productModel h4 {
+  font-size: "25px" !important;
+  color: rgba(0 0 0 0.7);
+  font-weight: bold;
+  padding: 15px;
+}
