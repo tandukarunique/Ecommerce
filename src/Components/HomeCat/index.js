@@ -27,7 +27,7 @@ const HomeCat = () => {
           </div>
 
           <div className="itemcat  mt-2">
-            <img src="https://video.drz.lazcdn.com/vod-4e6588/d02c8f4c147771efbfc987c7361c0102/snapshots/normal/3443D691-18F87B64F95-1637-5547-817-8203000001.jpg" />
+            <img src="https://video.drz.lazcdn.com/vod-4e6588/d02c8f4c147771efbfc987c7361c0102/snapshots/normal/3443D691-18F87B64F95-1637-5547-817-8203000001.jpg" alt="cat2"/>
             <h5>Beauty</h5>
           </div>
 

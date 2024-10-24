@@ -38,7 +38,7 @@ const ProductItem = () => {
                 <img
                   src="https://img.drz.lazcdn.com/static/np/p/9963edcd6c3a25f2a783804509a76d05.jpg_720x720q80.jpg_.webp"
                   alt=""
-                  className=" w-100 mt-4"
+                  className=" w-100 mt-3"
                 />
                 <span className="badge badge-primary">27%</span>
                 <div className="actions">
@@ -49,7 +49,7 @@ const ProductItem = () => {
                     <AiOutlineFullscreen />
                   </Button>
                 </div>
-                <div className="info">
+                <div className="info ">
                   {" "}
                   <div className="text-success d-block">Item 1</div>
                   <h5>

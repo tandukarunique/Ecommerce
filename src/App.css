@@ -635,7 +635,6 @@ nav .navpart2 ul li:hover .submenu {
   padding: 1px;
   gap: 5px;
   transition: all 0.3s ease-in-out;
-  /* z-index: 1000; */
   transition: all 0.3s;
 }
 .productItem .actions button {
@@ -907,12 +906,20 @@ footer .copyright ul li a svg {
 footer .copyright ul li a svg:hover {
   color: #908b8b;
 }
+.productModel {
+  max-width: 2000px;
+  margin: auto; 
+}
 /*view more button thiche pachi khulne box*/
 .productModel.MuiPaper-elevation {
-  /* padding: 25px; */
-  position: relative;
+  
+  /* position: relative; */
   max-width: 900px !important;
   width: 900px !important;
+}
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  max-width: 1200px !important;
+  width: 1200px !important;
 }
 .productModel h4 {
   font-size: "25px" !important;
@@ -920,3 +927,53 @@ footer .copyright ul li a svg:hover {
   font-weight: bold;
   padding: 15px;
 }
+/*Product zoom ko*/
+.productZoom {
+  width: 600px;
+  height: 600px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  overflow: absolute;
+  border-radius: 15px;
+}
+.zoomSliderBig {
+  width: 300px !important;
+}
+.zoomSlider {
+  padding-top: 20px;
+}
+
+.zoomSlider .item {
+  border: 2px solid transparent !important;
+  overflow: hidden;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.zoomSlider .slick-current .item {
+  border: 2px solid #3bb77e !important;
+}
+.zoomSlider .slick-arrow {
+  top: 55% !important;
+  zoom: 75% !important;
+}
+.zoomSlider .slick-arrow.slick-next {
+  right: -2% !important;
+}
+.zoomSlider .slick-arrow.slick-prev {
+  left: -5% !important ;
+}
+@media (max-width: 768px) {
+  .productModel {
+    width: 90%; 
+  }
+
+  .col-md-7 {
+    flex: 0 0 100%; 
+    max-width: 100%; 
+  }
+}
+.item .InnerImageZoom img{
+  margin-left: 34px;
+}
+
+
