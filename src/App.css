@@ -932,9 +932,10 @@ footer .copyright ul li a svg:hover {
   width: 600px;
   height: 600px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0px;
+  padding: 5px;
   overflow: absolute;
   border-radius: 15px;
+  
 }
 .zoomSliderBig {
   width: 300px !important;
@@ -942,6 +943,25 @@ footer .copyright ul li a svg:hover {
 .zoomSlider {
   padding-top: 20px;
 }
+/* External CSS */
+.InnerImageZoom {
+  width: 100%; /* Make it responsive within the slider */
+  height: auto;
+  max-width: 400px; /* Set maximum width */
+  display: block;
+  margin: auto;
+  border-radius: 8px; /* Optional border radius */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Adjust the slider item container */
+.zoomSliderBig .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensures proper alignment */
+}
+
 
 .zoomSlider .item {
   border: 2px solid transparent !important;
