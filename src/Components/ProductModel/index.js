@@ -24,65 +24,61 @@ const ProductModel = (props) => {
 
   return (
     <Dialog
-    open={true}
-    className="productModel"
-    onClose={props.CloseProductModel}
-  >
-    <Button
-      className="close_ d-flex"
-      style={{ display: "flex", fontSize: "32px", marginLeft: "auto" }}
-      onClick={props.CloseProductModel}
+      open={true}
+      className="productModel"
+      onClose={props.CloseProductModel}
     >
-      <IoIosClose />
-    </Button>
-    <h4 className="mb-4">
-      Wega 32 Inch Frameless Led Smart Android 12 1GB RAM 8GB
-    </h4>
-    <div className="d-flex ml-4 ">
-      <div className="d-flex mr-4 ml-2">
-        <span>Brands: </span>
-        <span className="ml-4">Welch's</span>
-      </div>
-      <Rating
-        name="read-only"
-        value={5}
-        size="small"
-        precision={0.5}
-        readOnly
-      />
-    </div>
-    <div className="row mt-3 productDetailModel">
-      <div className="col-md-5">
-        <div className="productZoom">
-          <Slider {...settings2} className="zoomSliderBig" ref={zoomSliderBig}>
-            <div className="item">
-              <InnerImageZoom
-                zoomType="hover"
-                zoomScale={1.1}
-                src="https://img.drz.lazcdn.com/static/np/p/4b50a9aa0feac3884541417feb76d2c7.jpg_400x400q75.jpg_.webp"
-                style={{
-                  maxWidth: "400px",   // Adjust the maximum width
-                  width: "100%",       // Make responsive
-                  height: "auto",      // Maintain aspect ratio
-                  borderRadius: "8px", // Optional rounded corners
-                  boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)", // Optional shadow for depth
-                  margin: "auto"       // Center the image in the container
-                }}
-              />
-            </div>
-          </Slider>
+      <Button
+        className="close_ d-flex"
+        style={{ display: "flex", fontSize: "32px", marginLeft: "auto" }}
+        onClick={props.CloseProductModel}
+      >
+        <IoIosClose />
+      </Button>
+      <h4 className="mb-4">
+        Wega 32 Inch Frameless Led Smart Android 12 1GB RAM 8GB
+      </h4>
+      <div className="d-flex ml-4 ">
+        <div className="d-flex mr-4 ml-2">
+          <span>Brands: </span>
+          <span className="ml-4">Welch's</span>
         </div>
+        <Rating
+          name="read-only"
+          value={5}
+          size="small"
+          precision={0.5}
+          readOnly
+        />
       </div>
-      <div className="col-md-7">
-        <div className="d-flex">
-          <br />
-          <br />
-          <br />
+      <div className="row mt-3 productDetailModel">
+        <div className="col-md-6">
+          <div className="productZoom ml-4">
+            <Slider
+              {...settings2}
+              className="zoomSliderBig"
+              ref={zoomSliderBig}
+            >
+              <div className="w-100"  >
+                <InnerImageZoom
+                  zoomType="hover"
+                  zoomScale={1.1}
+
+                  src="https://img.drz.lazcdn.com/static/np/p/7e874008fce415453a1629e638ec8871.jpg_720x720q80.jpg_.webp"
+                />
+              </div>
+            </Slider>
+          </div>
         </div>
+        {/* <div className="col-md-7">
+          <div className="d-flex">
+            <br />
+            <br />
+            <br />
+          </div>
+        </div> */}
       </div>
-    </div>
-  </Dialog>
-  
+    </Dialog>
   );
 };
 

@@ -929,62 +929,37 @@ footer .copyright ul li a svg:hover {
 }
 /*Product zoom ko*/
 .productZoom {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 5px;
-  overflow: absolute;
+  /* overflow: absolute; */
   border-radius: 15px;
+  display: flex;
+  justify-content: center !important; 
+   align-items: center ;      
   
 }
-.zoomSliderBig {
-  width: 300px !important;
-}
-.zoomSlider {
-  padding-top: 20px;
-}
-/* External CSS */
-.InnerImageZoom {
-  width: 100%; /* Make it responsive within the slider */
+.w-100{
+  margin-left: -12px;
   height: auto;
-  max-width: 400px; /* Set maximum width */
-  display: block;
+  
+
+}
+.zoomSliderBig {
+  width: 380px !important;
+}
+
+
+.productZoom .iiz__img-wrapper {
+  width: 100%; 
+  max-width: 500px; 
   margin: auto;
-  border-radius: 8px; /* Optional border radius */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-}
-
-/* Adjust the slider item container */
-.zoomSliderBig .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* Ensures proper alignment */
 }
 
 
-.zoomSlider .item {
-  border: 2px solid transparent !important;
-  overflow: hidden;
-  border-radius: 1px;
-  cursor: pointer;
-}
-.zoomSlider .slick-current .item {
-  border: 2px solid #3bb77e !important;
-}
-.zoomSlider .slick-arrow {
-  top: 55% !important;
-  zoom: 75% !important;
-}
-.zoomSlider .slick-arrow.slick-next {
-  right: -2% !important;
-}
-.zoomSlider .slick-arrow.slick-prev {
-  left: -5% !important ;
-}
 @media (max-width: 768px) {
   .productModel {
-    width: 90%; 
+    width: 100%; 
   }
 
   .col-md-7 {
@@ -992,8 +967,6 @@ footer .copyright ul li a svg:hover {
     max-width: 100%; 
   }
 }
-.item .InnerImageZoom img{
-  margin-left: 34px;
-}
+
 
 
