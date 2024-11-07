@@ -21,6 +21,10 @@ const ProductModel = (props) => {
     arrows: true,
     autoplay: true,
   };
+  // const goto = (index) => {
+  //   zoomSliderBig.current.slickGoTo(index);
+  //   zoomSliderBig.current.slickGoTo(index)
+  // }
 
   return (
     <Dialog
@@ -59,24 +63,60 @@ const ProductModel = (props) => {
               className="zoomSliderBig"
               ref={zoomSliderBig}
             >
-              <div className="w-100"  >
+              <div className="w-100">
                 <InnerImageZoom
                   zoomType="hover"
-                  zoomScale={1.1}
-
+                  zoomScale={1.01}
                   src="https://img.drz.lazcdn.com/static/np/p/7e874008fce415453a1629e638ec8871.jpg_720x720q80.jpg_.webp"
+                />
+              </div>
+              <div className="w-100">
+                <InnerImageZoom
+                  zoomType="hover"
+                  zoomScale={1.01}
+                  src="https://img.drz.lazcdn.com/static/np/p/10d64a0ba72761b6bb7d678e533a59fa.jpg_720x720q80.jpg_.webp"
+                />
+              </div>
+              <div className="w-100">
+                <InnerImageZoom
+                  zoomType="hover"
+                  zoomScale={1.01}
+                  src="https://img.drz.lazcdn.com/static/np/p/7e874008fce415453a1629e638ec8871.jpg_720x720q80.jpg_.webp"
+                />
+              </div>
+              <div className="w-100">
+                <InnerImageZoom
+                  zoomType="hover"
+                  zoomScale={1.01}
+                  src="https://gadgethousenepal.com/wp-content/uploads/2023/01/81iLglMLueL._SX679_.jpg"
                 />
               </div>
             </Slider>
           </div>
         </div>
-        {/* <div className="col-md-7">
-          <div className="d-flex">
-            <br />
-            <br />
-            <br />
+        <div className="col-md-0">
+          <div className="d-flex info align">
+            <span
+              className="oldPrice lg"
+              style={{ marginLeft: "-5px", fontSize: "20px" }}
+            >
+              Rs 21,990
+            </span>
+            <span
+              className="netPrice text-danger lg"
+              style={{ fontSize: "20px", marginLeft: "10px" }}
+            >
+              Rs 16.028
+            </span>
           </div>
-        </div> */}
+          <span className="badge bg-success mt-4">IN STOCK</span>
+          <p className="mt-3"style={{fontSize:"20px"}}>
+          Free Wall Mount inside Worth Rs.450<br/>Brand Name: WEGA, 
+            <br/>Model: Wega 32" Smart High Sound<br/> 
+
+           
+          </p>
+        </div>
       </div>
     </Dialog>
   );
