@@ -962,3 +962,27 @@ footer .copyright ul li a svg:hover {
     max-width: 100%;
   }
 }
+/**/
+.quantityDrop {
+  width: 150px;
+  gap: 13px;
+}
+.quantityDrop button {
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.quantityDrop button svg {
+  color: black !important;
+}
+.quantityDrop input {
+  width: 20px;
+  border: 0px;
+  background: transparent;
+  outline: none;
+  
+  
+}

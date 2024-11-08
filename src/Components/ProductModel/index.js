@@ -6,6 +6,9 @@ import Slider from "react-slick";
 import { useRef } from "react";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import InnerImageZoom from "react-inner-image-zoom";
+import QuantityBox from "../quantityBox/index";
+import { FaHeart } from "react-icons/fa";
+import { MdCompareArrows } from "react-icons/md";
 
 // import zoomitem1 from "../../assets/images/zoomitem1.webp";
 
@@ -110,12 +113,46 @@ const ProductModel = (props) => {
             </span>
           </div>
           <span className="badge bg-success mt-4">IN STOCK</span>
-          <p className="mt-3"style={{fontSize:"20px"}}>
-          Free Wall Mount inside Worth Rs.450<br/>Brand Name: WEGA, 
-            <br/>Model: Wega 32" Smart High Sound<br/> 
-
-           
+          <p className="mt-3" style={{ fontSize: "20px" }}>
+            Free Wall Mount inside Worth Rs.450
+            <br />
+            Brand Name: WEGA,
+            <br />
+            Model: Wega 32" Smart High Sound
+            <br />
           </p>
+          <div className="d-flex align-items-center">
+            <QuantityBox />
+            <Button
+              className="btn-white btn-lg btn-big btn-round"
+              style={{
+                background: "#233a95",
+                fontSize: "17px",
+                padding: "10px 25px",
+                borderRadius: "30px",
+                color: "white",
+                textTransform: "capitalize",
+              }}
+            >
+              Add to Cart
+            </Button>
+          </div>
+          <div className="d-flex align item-center">
+            <Button
+              className="btn-round"
+              style={{
+                textTransform: "capitalize",
+                marginTop: "25px",
+                cursor: "pointer",
+              }}
+              variant="outlined"
+            >
+              <FaHeart style={{ marginRight: "8px" }} /> Add to Wishlist
+            </Button>
+            <Button className="btn-round btn-sml ml-3 mt-4" variant="outlined">
+              <MdCompareArrows />Compare
+            </Button>
+          </div>
         </div>
       </div>
     </Dialog>
