@@ -11,7 +11,7 @@ const MyContext = createContext();
 
 function App() {
   const [countryList, setcountryList] = useState([]);
-  const [selectedCountry, setselectedCountry] = useState('');
+  const [selectedCountry, setselectedCountry] = useState("");
 
   const getCountry = async (url) => {
     try {
@@ -40,7 +40,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </MyContext.Provider>
     </BrowserRouter>
   );

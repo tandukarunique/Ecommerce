@@ -559,7 +559,7 @@ nav .navpart2 ul li:hover .submenu {
   width: 1190px;
   height: 500px;
   /* border: 1px solid rgba(199, 7, 7, 0.1); */
-  margin-left: -6rem;
+  margin-left: -7rem;
   margin-top: -34rem;
 }
 /*item haru bhako box*/
@@ -629,20 +629,20 @@ nav .navpart2 ul li:hover .submenu {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: -490%;
+  right: 6px; /* Adjust the value to move further right */
+  align-items: flex-end; /* Ensures content aligns to the right */
   top: 6px;
   font-size: 10px;
-  /* z-index: 10; */
   padding: 1px;
   gap: 5px;
   transition: all 0.3s ease-in-out;
-  transition: all 0.3s;
 }
+
 .productItem .actions button {
   display: flex;
   align-items: center;
   justify-content: center;
-  right: 25px !important;
+  /* right: -25px !important; */
   min-width: 35px !important;
   height: 35px !important;
   width: 30px !important;
