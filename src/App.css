@@ -581,9 +581,18 @@ nav .navpart2 ul li:hover .submenu {
   border: 1.5px solid rgba(0, 0, 0, 0.1);
 }
 
+ .slid .slick-track{
+  max-width: 308px;
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+  width: 323px; 
+}
 .slick-list .slick-track {
   margin-left: 15px;
+ 
 }
+ 
+
 
 /*Item description*/
 .productItem {
@@ -611,13 +620,14 @@ nav .navpart2 ul li:hover .submenu {
 }
 .info .OldPrice {
   text-decoration: line-through;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.4);
 }
 
+
 .info .Netprice {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.4);
 }
@@ -943,11 +953,12 @@ footer .copyright ul li a svg:hover {
 }
 /*Product img after expand*/
 .zoomSliderBig {
+  max-width: 380px !important;
   width: 380px !important;
 }
 
 .productZoom .iiz__img-wrapper {
-  width: 100%;
+  width: 500px;
   max-width: 500px;
   margin: auto;
 }

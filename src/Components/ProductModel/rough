@@ -150,7 +150,8 @@ const ProductModel = (props) => {
               <FaHeart style={{ marginRight: "8px" }} /> Add to Wishlist
             </Button>
             <Button className="btn-round btn-sml ml-3 mt-4" variant="outlined">
-              <MdCompareArrows />Compare
+              <MdCompareArrows />
+              Compare
             </Button>
           </div>
         </div>

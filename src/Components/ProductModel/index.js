@@ -3,158 +3,95 @@ import { IoIosClose } from "react-icons/io";
 import { Button } from "@mui/material";
 import Rating from "@mui/material/Rating";
 import Slider from "react-slick";
-import { useRef } from "react";
-import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import InnerImageZoom from "react-inner-image-zoom";
-import QuantityBox from "../quantityBox/index";
-import { FaHeart } from "react-icons/fa";
-import { MdCompareArrows } from "react-icons/md";
+import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 
-// import zoomitem1 from "../../assets/images/zoomitem1.webp";
-
-const ProductModel = (props) => {
-  const zoomSliderBig = useRef();
-
-  const settings2 = {
+const ProductModel = ({ product, closeProductModel }) => {
+  const sliderSettings = {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 1, // Show one image at a time for zoom
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
   };
-  // const goto = (index) => {
-  //   zoomSliderBig.current.slickGoTo(index);
-  //   zoomSliderBig.current.slickGoTo(index)
-  // }
 
   return (
-    <Dialog
-      open={true}
-      className="productModel"
-      onClose={props.CloseProductModel}
-    >
+    <Dialog open={true} onClose={closeProductModel} className="productModel">
       <Button
         className="close_ d-flex"
         style={{ display: "flex", fontSize: "32px", marginLeft: "auto" }}
-        onClick={props.CloseProductModel}
+        onClick={closeProductModel}
       >
         <IoIosClose />
       </Button>
-      <h4 className="mb-4">
-        Wega 32 Inch Frameless Led Smart Android 12 1GB RAM 8GB
-      </h4>
-      <div className="d-flex ml-4 ">
-        <div className="d-flex mr-4 ml-2">
-          <span>Brands: </span>
-          <span className="ml-4">Welch's</span>
-        </div>
+      {/* Change: Display dynamic product name */}
+      <h4 className="mb-1">{product.name}</h4>
+      <div className="d-flex ml-4">
+        
         <Rating
-          name="read-only"
-          value={5}
+          name={`rating-${product.id}`}
+          value={product.rating}
           size="small"
           precision={0.5}
           readOnly
         />
       </div>
       <div className="row mt-3 productDetailModel">
-        <div className="col-md-6">
-          <div className="productZoom ml-4">
-            <Slider
-              {...settings2}
-              className="zoomSliderBig"
-              ref={zoomSliderBig}
-            >
-              <div className="w-100">
-                <InnerImageZoom
-                  zoomType="hover"
-                  zoomScale={1.01}
-                  src="https://img.drz.lazcdn.com/static/np/p/7e874008fce415453a1629e638ec8871.jpg_720x720q80.jpg_.webp"
-                />
-              </div>
-              <div className="w-100">
-                <InnerImageZoom
-                  zoomType="hover"
-                  zoomScale={1.01}
-                  src="https://img.drz.lazcdn.com/static/np/p/10d64a0ba72761b6bb7d678e533a59fa.jpg_720x720q80.jpg_.webp"
-                />
-              </div>
-              <div className="w-100">
-                <InnerImageZoom
-                  zoomType="hover"
-                  zoomScale={1.01}
-                  src="https://img.drz.lazcdn.com/static/np/p/7e874008fce415453a1629e638ec8871.jpg_720x720q80.jpg_.webp"
-                />
-              </div>
-              <div className="w-100">
-                <InnerImageZoom
-                  zoomType="hover"
-                  zoomScale={1.01}
-                  src="https://gadgethousenepal.com/wp-content/uploads/2023/01/81iLglMLueL._SX679_.jpg"
-                />
-              </div>
-            </Slider>
+  {/* Left Column: Product Image */}
+  <div className="col-md-6">
+    <div className="productZoom ml-4">
+      <div className="slid">
+        <Slider {...sliderSettings}>
+          <div className="w-100">
+            <InnerImageZoom
+              zoomType="hover"
+              zoomScale={1.01}
+              src={product.image}
+            />
           </div>
-        </div>
-        <div className="col-md-0">
-          <div className="d-flex info align">
-            <span
-              className="oldPrice lg"
-              style={{ marginLeft: "-5px", fontSize: "20px" }}
-            >
-              Rs 21,990
-            </span>
-            <span
-              className="netPrice text-danger lg"
-              style={{ fontSize: "20px", marginLeft: "10px" }}
-            >
-              Rs 16.028
-            </span>
-          </div>
-          <span className="badge bg-success mt-4">IN STOCK</span>
-          <p className="mt-3" style={{ fontSize: "20px" }}>
-            Free Wall Mount inside Worth Rs.450
-            <br />
-            Brand Name: WEGA,
-            <br />
-            Model: Wega 32" Smart High Sound
-            <br />
-          </p>
-          <div className="d-flex align-items-center">
-            <QuantityBox />
-            <Button
-              className="btn-white btn-lg btn-big btn-round"
-              style={{
-                background: "#233a95",
-                fontSize: "17px",
-                padding: "10px 25px",
-                borderRadius: "30px",
-                color: "white",
-                textTransform: "capitalize",
-              }}
-            >
-              Add to Cart
-            </Button>
-          </div>
-          <div className="d-flex align item-center">
-            <Button
-              className="btn-round"
-              style={{
-                textTransform: "capitalize",
-                marginTop: "25px",
-                cursor: "pointer",
-              }}
-              variant="outlined"
-            >
-              <FaHeart style={{ marginRight: "8px" }} /> Add to Wishlist
-            </Button>
-            <Button className="btn-round btn-sml ml-3 mt-4" variant="outlined">
-              <MdCompareArrows />Compare
-            </Button>
-          </div>
-        </div>
+        </Slider>
       </div>
+    </div>
+  </div>
+
+  {/* Right Column: Product Info */}
+  <div className="col-md-6 flex flex-col space-y-4">
+    {/* Pricing Section */}
+    <div className="flex items-center space-x-4">
+      <span className="text-lg line-through">{product.oldPrice}</span>
+      <span className="text-lg text-danger font-semibold ml-2">{product.netPrice}</span>
+    </div>
+
+    {/* Product Details Section */}
+    <div className="text-sm text-gray-700">
+      <span className="font-medium" style={{marginLeft:"-10px"}}>Details:</span>
+      <span className="ml-2" >{product.details}</span>
+    </div>
+
+    {/* Stock Badge */}
+    <span className={`badge ${product.stock ? "bg-green-500" : "bg-red-500"} text-white px-4 py-1 rounded-full`}>
+      {product.stock}
+    </span>
+
+    {/* Add to Cart Button */}
+    <Button
+      className="btn-lg btn-big btn-round mt-3"
+      style={{
+        background: "#233a95",
+        fontSize: "17px",
+        padding: "8px 20px",
+        borderRadius: "30px",
+        color: "white",
+        textTransform: "capitalize",
+      }}
+    >
+      Add to Cart
+    </Button>
+  </div>
+</div>
+
     </Dialog>
   );
 };

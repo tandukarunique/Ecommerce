@@ -8,17 +8,17 @@ import ProductModel from "../ProductModel/index";
 import { useState } from "react";
 
 const ProductItem = () => {
-  const [isOpenProductModel, setisOpenProductModel] = useState(false);
-  const [selectedProductId, setSelectedProductId] = useState(null);
+  const [isOpenProductModel, setIsOpenProductModel] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
-  const viewProductDetails = (id) => {
-    setSelectedProductId(id);
-    setisOpenProductModel(true);
+  const viewProductDetails = (product) => {
+    setSelectedProduct(product);
+    setIsOpenProductModel(true);
   };
 
-  const CloseProductModel = () => {
-    setisOpenProductModel(false);
-    setSelectedProductId(null);
+  const closeProductModel = () => {
+    setIsOpenProductModel(false);
+    setSelectedProduct(null);
   };
 
   const products = [
@@ -31,19 +31,18 @@ const ProductItem = () => {
       discount: "27%",
       stock: "In Stock",
       rating: 5.0,
-      
-
+      details: "Wega 32 Inch Frameless Smart LED TV with Android 12, 1GB RAM, 8GB Storage. Great for high-definition video streaming and smart home connectivity.",
     },
     {
       id: 2,
-      name: "Portable small Folding Laptop Table",
+      name: "Portable Small Folding Laptop Table",
       image: "https://img.drz.lazcdn.com/static/np/p/68a381c0e23645cbceb90120a0a82652.jpg_400x400q80.jpg_.webp",
       oldPrice: "Rs 1,400",
       netPrice: "Rs 1,250",
       discount: "18%",
       stock: "In Stock",
       rating: 4.8,
-      
+      details: "Compact and portable folding laptop table, perfect for working from home or small spaces. Can be folded and stored easily.",
     },
     {
       id: 3,
@@ -54,6 +53,7 @@ const ProductItem = () => {
       discount: "27%",
       stock: "In Stock",
       rating: 4.9,
+      details: "A foldable wardrobe organizer to help you keep your clothes neatly arranged and easily accessible. Saves space and is ideal for travel.",
     },
     {
       id: 4,
@@ -64,6 +64,7 @@ const ProductItem = () => {
       discount: "20%",
       stock: "In Stock",
       rating: 4.7,
+      details: "A stylish and durable brown PU leather bifold wallet. Has multiple card slots and a coin pocket for convenience.",
     },
     {
       id: 5,
@@ -74,6 +75,7 @@ const ProductItem = () => {
       discount: "16%",
       stock: "In Stock",
       rating: 4.6,
+      details: "Comfortable and stylish summer men's slides. Ideal for casual wear, these slides offer excellent grip and comfort.",
     },
     {
       id: 6,
@@ -84,6 +86,7 @@ const ProductItem = () => {
       discount: "13%",
       stock: "In Stock",
       rating: 4.5,
+      details: "A classic trio combo pack of quality kitchenware. Includes essential tools for everyday use in the kitchen.",
     },
     {
       id: 7,
@@ -94,6 +97,7 @@ const ProductItem = () => {
       discount: "17%",
       stock: "In Stock",
       rating: 5.0,
+      details: "Premium gaming earbuds with Active Noise Cancellation (ANC) for an immersive gaming experience. Includes multiple ear tips for comfort.",
     },
     {
       id: 8,
@@ -104,6 +108,7 @@ const ProductItem = () => {
       discount: "23%",
       stock: "In Stock",
       rating: 4.9,
+      details: "Cozy and comfortable indoor slippers for winter. Keeps your feet warm and is suitable for both men and women.",
     },
   ];
 
@@ -112,9 +117,7 @@ const ProductItem = () => {
       <Swiper
         slidesPerView={7}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
+        pagination={{ clickable: true }}
         modules={[Navigation]}
         className="mySwiper"
       >
@@ -132,12 +135,11 @@ const ProductItem = () => {
                   <Button>
                     <CiHeart />
                   </Button>
-                  <Button onClick={() => viewProductDetails(product.id)}>
+                  <Button onClick={() => viewProductDetails(product)}>
                     <AiOutlineFullscreen />
                   </Button>
                 </div>
                 <div className="info">
-                  <div className="text-success d-block">{product.name}</div>
                   <h5>{product.name}</h5>
                   <span>{product.stock}</span>
                   <Rating
@@ -150,7 +152,7 @@ const ProductItem = () => {
                   />
                   <div className="d-flex">
                     <span className="OldPrice mt-3 ml-1">{product.oldPrice}</span>
-                    <span className="Netprice text-danger mt-3 ml-2">
+                    <span className="NetPrice text-danger mt-3 ml-2">
                       {product.netPrice}
                     </span>
                   </div>
@@ -161,10 +163,10 @@ const ProductItem = () => {
         ))}
       </Swiper>
 
-      {isOpenProductModel && (
+      {isOpenProductModel && selectedProduct && (
         <ProductModel
-          productId={selectedProductId}
-          CloseProductModel={CloseProductModel}
+          product={selectedProduct}
+          closeProductModel={closeProductModel}
         />
       )}
     </>
